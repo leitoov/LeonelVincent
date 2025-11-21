@@ -65,7 +65,7 @@ const scrollToTimeline = () => {
             :style="{ animationDelay: `${index * 120}ms` }"
           >
             <div
-              class="absolute left-[6px] top-6 h-4 w-4 rounded-full border-4 border-white bg-slate-900 shadow md:left-auto md:right-[-10px] md:odd:right-auto md:odd:left-[-10px]"
+              class="absolute left-[6px] top-6 h-4 w-4 rounded-full border-4 border-white bg-slate-900 shadow md:left-auto md:right-[-12px] md:odd:right-auto md:odd:left-[-12px]"
               aria-hidden="true"
             />
             <p class="text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">{{ exp.period }}</p>
