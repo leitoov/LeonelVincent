@@ -1,0 +1,38 @@
+[
+  {
+    "role": "Full Stack Developer",
+    "company": "Freelance",
+    "period": "2023 - Actualidad",
+    "location": "Remoto",
+    "summary": "Diseño y desarrollo de soluciones web con foco en performance y experiencia de usuario.",
+    "highlights": [
+      "Construcción de SPAs con Vue/Angular/React",
+      "Integraciones con APIs REST y bases de datos MySQL/MongoDB",
+      "Automatización de despliegues y CI/CD"
+    ]
+  },
+  {
+    "role": "Backend Developer",
+    "company": "Proyectos PHP",
+    "period": "2021 - 2023",
+    "location": "Híbrido",
+    "summary": "Implementación de APIs y servicios con Laravel, Symfony y Yii.",
+    "highlights": [
+      "Optimización de consultas y diseño de esquemas",
+      "Autenticación, autorizaciones y manejo de sesiones",
+      "Documentación y handoff para equipos frontend"
+    ]
+  },
+  {
+    "role": "IT Project Support",
+    "company": "Equipos multidisciplina",
+    "period": "2019 - 2021",
+    "location": "On-site",
+    "summary": "Soporte en gestión de proyectos y aseguramiento de calidad.",
+    "highlights": [
+      "Seguimiento de tareas con metodologías ágiles",
+      "Pruebas funcionales y reporte de incidencias",
+      "Mejora continua en procesos y documentación"
+    ]
+  }
+]
