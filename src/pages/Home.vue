@@ -37,7 +37,7 @@ const scrollToTimeline = () => {
       <div class="flex justify-center pt-2">
         <button
           type="button"
-          class="grid h-14 w-14 place-items-center rounded-full bg-white text-slate-900 shadow-xl shadow-slate-500/20 ring-1 ring-slate-200 transition hover:-translate-y-0.5 hover:shadow-2xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-500"
+          class="grid h-14 w-14 place-items-center rounded-full bg-white text-slate-900 shadow-xl shadow-slate-500/25 ring-2 ring-white/70 transition hover:-translate-y-1 hover:shadow-2xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-500 animate-floating"
           @click="scrollToTimeline"
           aria-label="Ver experiencia laboral"
         >
