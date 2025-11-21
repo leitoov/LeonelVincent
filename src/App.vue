@@ -5,42 +5,44 @@ const count = ref(0)
 </script>
 
 <template>
-  <div class="page">
-    <header class="logo-row">
-      
-    </header>
+  <div class="min-h-screen bg-slate-50 text-slate-900">
+    <div class="mx-auto max-w-4xl px-6 py-12 md:py-16">
+      <div class="flex flex-col gap-6 rounded-2xl border border-slate-200 bg-white p-8 shadow-xl ring-1 ring-slate-100 md:p-10">
+        <div class="flex flex-col gap-3 md:flex-row md:items-start md:justify-between">
+          <div>
+            <p class="text-xs font-semibold uppercase tracking-[0.14em] text-slate-500">Portfolio · Vue 3</p>
+            <h1 class="text-3xl font-semibold tracking-tight text-slate-900 md:text-4xl">Leonel Vincent</h1>
+            <p class="mt-2 text-base text-slate-600 md:text-lg">
+              Soluciones innovadoras con foco en impacto, gestión de proyectos y desarrollo web.
+            </p>
+          </div>
+          <button
+            type="button"
+            class="self-start rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-lg shadow-slate-900/15 transition hover:-translate-y-0.5 hover:bg-slate-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-500"
+            @click="count++"
+          >
+            Clicks de prueba: {{ count }}
+          </button>
+        </div>
 
-    <main class="panel">
-      <h1>Leonel Vincent</h1>
-      <p class="lead mb-16">
-        Soy una persona apasionada por brindar soluciones innovadoras, generar impactos positivos y marcar la diferencia en la gestión de proyectos y desarrollo web.
-      </p>
-      <p class="lead">
-        Mi formación inicial es como Técnico en Programación y actualmente estoy cursando la carrera de Ingeniería en Sistemas, lo que me permite complementar mi experiencia práctica con una sólida base teórica.
-      </p>
-      <p class="lead">
-      Poseo conocimientos en desarrollo web y mobile utilizando tecnologías como Angular, Vue, React e Ionic, así como experiencia en desarrollo backend con PHP y frameworks como Laravel, Symfony y Yii. Además, cuento con manejo de bases de datos MySQL y MongoDB, lo que me permite abordar proyectos de manera integral.
-      </p>
-      <p class="lead">
-        He obtenido certificaciones en Desarrollo Full Stack por la UTN, en gestión de proyectos y metodologías ágiles mediante LinkedIn Learning, y en áreas de UX/UI, UX Writing y neurociencia del feedback a través de Platzi.
-      </p>
-      <p class="lead">
-        Estas formaciones refuerzan mi visión centrada en el usuario y mi capacidad para trabajar de forma organizada y eficiente.
-      </p>
-      <p class="lead">
-        Me considero una persona proactiva, responsable y con un fuerte deseo de continuar aprendiendo y creciendo profesionalmente.
-      </p>
-      <p class="lead">
-        Mi objetivo es contribuir con soluciones de calidad y seguir desarrollándome en entornos que valoren la innovación y el trabajo colaborativo.
-      </p>
-      <div class="card">
-        <button type="button" class="cta" @click="count++">
-          Clicks de prueba: {{ count }}
-        </button>
-        <p class="muted">
-          El contador simplemente asegura que el hot-reload está funcionando.
-        </p>
+        <div class="grid gap-4 text-base leading-relaxed text-slate-700 md:text-lg">
+          <p>
+            Mi formación inicial es como Técnico en Programación y actualmente estudio Ingeniería en Sistemas para complementar la experiencia práctica con base teórica.
+          </p>
+          <p>
+            Conocimientos en desarrollo web y mobile (Angular, Vue, React, Ionic) y backend con PHP (Laravel, Symfony, Yii). Manejo bases de datos MySQL y MongoDB para abordar proyectos de punta a punta.
+          </p>
+          <p>
+            Certificaciones: Desarrollo Full Stack (UTN), gestión de proyectos y metodologías ágiles (LinkedIn Learning), UX/UI, UX Writing y neurociencia del feedback (Platzi).
+          </p>
+          <p>
+            Me considero proactivo, responsable y con ganas de seguir aprendiendo y creciendo profesionalmente.
+          </p>
+          <p>
+            Objetivo: aportar soluciones de calidad y seguir desarrollándome en entornos que valoren la innovación y el trabajo colaborativo.
+          </p>
+        </div>
       </div>
-    </main>
+    </div>
   </div>
 </template>
