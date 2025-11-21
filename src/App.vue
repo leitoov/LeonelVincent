@@ -7,21 +7,32 @@ const count = ref(0)
 <template>
   <div class="page">
     <header class="logo-row">
-      <a href="https://vite.dev" target="_blank" rel="noreferrer">
-        <img src="/vite.svg" class="logo" alt="Vite logo" title="Vite" />
-      </a>
-      <a href="https://vuejs.org/" target="_blank" rel="noreferrer">
-        <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" title="Vue 3" />
-      </a>
+      
     </header>
 
     <main class="panel">
-      <p class="eyebrow">Tu portfolio en Vue 3</p>
-      <h1>Base lista para empezar</h1>
-      <p class="lead">
-        Desde aquí vas a montar el recorrido de tu CV en timeline y un panel de ideas/notas.
+      <h1>Leonel Vincent</h1>
+      <p class="lead mb-16">
+        Soy una persona apasionada por brindar soluciones innovadoras, generar impactos positivos y marcar la diferencia en la gestión de proyectos y desarrollo web.
       </p>
-
+      <p class="lead">
+        Mi formación inicial es como Técnico en Programación y actualmente estoy cursando la carrera de Ingeniería en Sistemas, lo que me permite complementar mi experiencia práctica con una sólida base teórica.
+      </p>
+      <p class="lead">
+      Poseo conocimientos en desarrollo web y mobile utilizando tecnologías como Angular, Vue, React e Ionic, así como experiencia en desarrollo backend con PHP y frameworks como Laravel, Symfony y Yii. Además, cuento con manejo de bases de datos MySQL y MongoDB, lo que me permite abordar proyectos de manera integral.
+      </p>
+      <p class="lead">
+        He obtenido certificaciones en Desarrollo Full Stack por la UTN, en gestión de proyectos y metodologías ágiles mediante LinkedIn Learning, y en áreas de UX/UI, UX Writing y neurociencia del feedback a través de Platzi.
+      </p>
+      <p class="lead">
+        Estas formaciones refuerzan mi visión centrada en el usuario y mi capacidad para trabajar de forma organizada y eficiente.
+      </p>
+      <p class="lead">
+        Me considero una persona proactiva, responsable y con un fuerte deseo de continuar aprendiendo y creciendo profesionalmente.
+      </p>
+      <p class="lead">
+        Mi objetivo es contribuir con soluciones de calidad y seguir desarrollándome en entornos que valoren la innovación y el trabajo colaborativo.
+      </p>
       <div class="card">
         <button type="button" class="cta" @click="count++">
           Clicks de prueba: {{ count }}
