@@ -61,11 +61,17 @@ const scrollToTimeline = () => {
           <article
             v-for="(exp, index) in experiences"
             :key="`${exp.role}-${exp.company}`"
-            class="relative flex flex-col gap-3 rounded-xl border border-slate-200 bg-white/90 p-5 shadow-sm ring-1 ring-slate-100 md:w-[48%] md:odd:ml-auto md:even:mr-auto fade-up"
+            :class="[
+              'relative flex flex-col gap-3 rounded-xl border border-slate-200 bg-white/90 p-5 shadow-sm ring-1 ring-slate-100 md:w-[48%] fade-up',
+              index % 2 === 0 ? 'md:mr-auto' : 'md:ml-auto',
+            ]"
             :style="{ animationDelay: `${index * 120}ms` }"
           >
             <div
-              class="absolute left-[6px] top-6 h-4 w-4 rounded-full border-4 border-white bg-slate-900 shadow md:left-auto md:right-[-12px] md:odd:right-auto md:odd:left-[-12px]"
+              :class="[
+                'absolute top-6 h-4 w-4 rounded-full border-4 border-white bg-slate-900 shadow',
+                index % 2 === 0 ? 'left-[6px] md:left-auto md:right-[-12px]' : 'left-[6px] md:right-auto md:left-[-12px]',
+              ]"
               aria-hidden="true"
             />
             <p class="text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">{{ exp.period }}</p>
