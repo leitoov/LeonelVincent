@@ -4,16 +4,33 @@
     "role": "Full Stack Developer & Technical Coordinator",
     "company": "Stefanini LATAM",
     "period": "2025 - Actualidad",
-    "location": "Remoto / LATAM",
-    "summary": "Participación en desarrollo y coordinación técnica para plataforma OLA (Grupo CVC Corp), integrando un proveedor de excursiones y trabajando sobre el monolito legacy.",
-    "description": "Colaboré en el desarrollo del middleware en PHP 8.4/Laravel 12 para integrar un proveedor de excursiones y, sobre todo, en el desacople e integración con el monolito legacy. Me enfoqué en análisis de requerimientos, documentación, refinamiento y seguimiento en Jira, coordinación de tareas con el equipo y QA de la integración.",
+    "location": "Hibrido",
+    "summary": "Participacion en desarrollo y coordinacion tecnica para plataforma OLA (Grupo CVC Corp), integrando un proveedor de excursiones y trabajando sobre el monolito legacy.",
+    "description": "Colabore en el desarrollo del middleware en PHP 8.4/Laravel 12 para integrar un proveedor de excursiones y, sobre todo, en el desacople e integracion con el monolito legacy. Me enfoque en analisis de requerimientos, documentacion, refinamiento y seguimiento en Jira, coordinacion de tareas con el equipo y QA de la integracion.",
     "highlights": [
       "Apoyo en middleware PHP 8.4/Laravel 12 y ajustes en monolito legacy",
-      "Desacople e integración con proveedor externo, pruebas y QA",
-      "Refinamiento en Jira, documentación y coordinación de tareas del equipo"
+      "Desacople e integracion con proveedor externo, pruebas y QA",
+      "Refinamiento en Jira, documentacion y coordinacion de tareas del equipo"
     ],
-    "technologies": ["PHP 8.4", "Laravel 12", "Monolito PHP legacy", "APIs REST", "Docker", "MySQL", "MongoDB", "Jira"],
-    "skills": ["Análisis de requerimientos", "Documentación funcional/técnica", "Coordinación de equipo", "Refinamiento y priorización en Jira", "Integración de proveedores", "Testing funcional", "Comunicación con UX y analistas"]
+    "technologies": ["PHP 8.4", "Laravel 12", "Monolito PHP 7.4 legacy", "APIs REST", "Docker", "MySQL", "MongoDB", "Linux", "Jira"],
+    "skills": ["Analisis de requerimientos", "Documentacion funcional/tecnica", "Coordinacion de equipo", "Refinamiento y priorizacion en Jira", "Integracion de proveedores", "Backlog tecnico", "Comunicacion con UX y analistas"]
+  },
+  {
+    "id": "famiq",
+    "role": "Full Stack Developer",
+    "company": "Famiq SRL",
+    "period": "2023 - 2025",
+    "location": "Hibrido",
+    "summary": "Desarrollo y evolucion de La PIN (e-commerce de aceros inoxidables), integrando SAP y modernizando el frontend.",
+    "description": "Implemente nuevas funcionalidades en Vue 2/3 y Laravel 8, migrando progresivamente la capa de presentacion de Twig a Vue. Desarrolle integraciones criticas con SAP via XML para sincronizar stock, precios y pedidos. Responsable del soporte en produccion, manteniendo el backlog de incidencias en cero, coordinando reuniones interareas y documentando procesos. Disene un esquema de categorizacion de errores en Redmine que mejoro trazabilidad y tiempos de resolucion.",
+    "highlights": [
+      "Migracion gradual de Twig hacia Vue para reducir deuda tecnica",
+      "Integracion estable con SAP/XML para sincronizar datos criticos",
+      "Backlog de errores en cero y coordinacion interareas para soporte",
+      "Categorizacion de errores en Redmine mejorando trazabilidad"
+    ],
+    "technologies": ["Vue 2", "Vue 3", "Twig", "Laravel 8", "SAP/XML", "Microservicios", "Redmine", "Figma", "Git"],
+    "skills": ["Soporte de produccion", "Integraciones SAP", "Documentacion y trazabilidad", "Coordinacion interareas", "Mejora continua"]
   },
   {
     "id": "freelance",
@@ -21,11 +38,11 @@
     "company": "Freelance",
     "period": "2023 - Actualidad",
     "location": "Remoto",
-    "summary": "Diseño y desarrollo de soluciones web con foco en performance y experiencia de usuario.",
+    "summary": "Diseno y desarrollo de soluciones web con foco en performance y experiencia de usuario.",
     "highlights": [
-      "Construcción de SPAs con Vue/Angular/React",
+      "Construccion de SPAs con Vue/Angular/React",
       "Integraciones con APIs REST y bases de datos MySQL/MongoDB",
-      "Automatización de despliegues y CI/CD"
+      "Automatizacion de despliegues y CI/CD"
     ]
   },
   {
@@ -33,12 +50,12 @@
     "role": "Backend Developer",
     "company": "Proyectos PHP",
     "period": "2021 - 2023",
-    "location": "Híbrido",
-    "summary": "Implementación de APIs y servicios con Laravel, Symfony y Yii.",
+    "location": "Hibrido",
+    "summary": "Implementacion de APIs y servicios con Laravel, Symfony y Yii.",
     "highlights": [
-      "Optimización de consultas y diseño de esquemas",
-      "Autenticación, autorizaciones y manejo de sesiones",
-      "Documentación y handoff para equipos frontend"
+      "Optimizacion de consultas y diseno de esquemas",
+      "Autenticacion, autorizaciones y manejo de sesiones",
+      "Documentacion y handoff para equipos frontend"
     ]
   },
   {
@@ -47,11 +64,11 @@
     "company": "Equipos multidisciplina",
     "period": "2019 - 2021",
     "location": "On-site",
-    "summary": "Soporte en gestión de proyectos y aseguramiento de calidad.",
+    "summary": "Soporte en gestion de proyectos y aseguramiento de calidad.",
     "highlights": [
-      "Seguimiento de tareas con metodologías ágiles",
+      "Seguimiento de tareas con metodologias agiles",
       "Pruebas funcionales y reporte de incidencias",
-      "Mejora continua en procesos y documentación"
+      "Mejora continua en procesos y documentacion"
     ]
   }
 ]
