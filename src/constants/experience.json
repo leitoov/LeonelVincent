@@ -5,15 +5,15 @@
     "company": "Stefanini LATAM",
     "period": "2025 - Actualidad",
     "location": "Remoto / LATAM",
-    "summary": "Desarrollo y coordinación técnica para plataforma OLA (Grupo CVC Corp), integrando un nuevo proveedor de excursiones mediante middleware.",
-    "description": "Desarrollé un middleware en PHP 8.4/Laravel 12 para integrar un proveedor de excursiones a la plataforma OLA, diseñando reglas de negocio y conectándolo con el monolito legacy. Al mes asumí la coordinación del equipo: backlog técnico, prioridades, estimaciones y procesos ágiles junto con analistas y UX, combinando desarrollo y liderazgo técnico.",
+    "summary": "Participación en desarrollo y coordinación técnica para plataforma OLA (Grupo CVC Corp), integrando un proveedor de excursiones y trabajando sobre el monolito legacy.",
+    "description": "Colaboré en el desarrollo del middleware en PHP 8.4/Laravel 12 para integrar un proveedor de excursiones y, sobre todo, en el desacople e integración con el monolito legacy. Me enfoqué en análisis de requerimientos, documentación, refinamiento y seguimiento en Jira, coordinación de tareas con el equipo y QA de la integración.",
     "highlights": [
-      "API middleware en PHP 8.4/Laravel 12 con validaciones y estandarización",
-      "Integración con monolito PHP legacy y proveedor externo",
-      "Coordinación técnica: backlog, prioridades, estimaciones, seguimiento"
+      "Apoyo en middleware PHP 8.4/Laravel 12 y ajustes en monolito legacy",
+      "Desacople e integración con proveedor externo, pruebas y QA",
+      "Refinamiento en Jira, documentación y coordinación de tareas del equipo"
     ],
-    "technologies": ["PHP 8.4", "Laravel 12", "APIs REST", "MySQL", "Monolito PHP legacy"],
-    "skills": ["Coordinación técnica", "Backlog y priorización", "Integración de proveedores", "Testing funcional", "Comunicación con UX y analistas"]
+    "technologies": ["PHP 8.4", "Laravel 12", "Monolito PHP legacy", "APIs REST", "Docker", "MySQL", "MongoDB", "Jira"],
+    "skills": ["Análisis de requerimientos", "Documentación funcional/técnica", "Coordinación de equipo", "Refinamiento y priorización en Jira", "Integración de proveedores", "Testing funcional", "Comunicación con UX y analistas"]
   },
   {
     "id": "freelance",
