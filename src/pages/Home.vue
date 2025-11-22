@@ -15,7 +15,7 @@ const scrollToTimeline = () => {
 
 <template>
   <section class="flex flex-col gap-10">
-    <div class="flex flex-col gap-6 rounded-2xl border border-slate-200 bg-white p-8 shadow-xl ring-1 ring-slate-100 md:p-10">
+    <div class="relative flex flex-col gap-6 rounded-2xl border border-slate-200 bg-white p-8 shadow-xl ring-1 ring-slate-100 md:p-10 pb-14">
       <div class="flex flex-col gap-3 md:flex-row md:items-start md:justify-between">
         <div>
           <p class="text-xs font-semibold uppercase tracking-[0.14em] text-slate-500">Portfolio · Vue 3</p>
@@ -34,7 +34,7 @@ const scrollToTimeline = () => {
         </p>
       </div>
 
-      <div class="flex justify-center pt-2">
+      <div class="absolute left-1/2 -bottom-7 -translate-x-1/2">
         <button
           type="button"
           class="grid h-14 w-14 place-items-center rounded-full bg-white text-slate-900 shadow-xl shadow-slate-500/25 ring-2 ring-white/70 transition hover:-translate-y-1 hover:shadow-2xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-500 animate-floating"
@@ -42,7 +42,7 @@ const scrollToTimeline = () => {
           aria-label="Ver experiencia laboral"
         >
           <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor" aria-hidden="true">
-            <path d="M380-280v-400l320 200-320 200Z" />
+            <path d="M480-200 200-480l56-56 184 184v-568h80v568l184-184 56 56L480-200Z" />
           </svg>
         </button>
       </div>
