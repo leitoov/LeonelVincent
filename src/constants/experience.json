@@ -1,5 +1,22 @@
 [
   {
+    "id": "stefanini",
+    "role": "Full Stack Developer & Technical Coordinator",
+    "company": "Stefanini LATAM",
+    "period": "2025 - Actualidad",
+    "location": "Remoto / LATAM",
+    "summary": "Desarrollo y coordinación técnica para plataforma OLA (Grupo CVC Corp), integrando un nuevo proveedor de excursiones mediante middleware.",
+    "description": "Desarrollé un middleware en PHP 8.4/Laravel 12 para integrar un proveedor de excursiones a la plataforma OLA, diseñando reglas de negocio y conectándolo con el monolito legacy. Al mes asumí la coordinación del equipo: backlog técnico, prioridades, estimaciones y procesos ágiles junto con analistas y UX, combinando desarrollo y liderazgo técnico.",
+    "highlights": [
+      "API middleware en PHP 8.4/Laravel 12 con validaciones y estandarización",
+      "Integración con monolito PHP legacy y proveedor externo",
+      "Coordinación técnica: backlog, prioridades, estimaciones, seguimiento"
+    ],
+    "technologies": ["PHP 8.4", "Laravel 12", "APIs REST", "MySQL", "Monolito PHP legacy"],
+    "skills": ["Coordinación técnica", "Backlog y priorización", "Integración de proveedores", "Testing funcional", "Comunicación con UX y analistas"]
+  },
+  {
+    "id": "freelance",
     "role": "Full Stack Developer",
     "company": "Freelance",
     "period": "2023 - Actualidad",
@@ -12,6 +29,7 @@
     ]
   },
   {
+    "id": "backend-php",
     "role": "Backend Developer",
     "company": "Proyectos PHP",
     "period": "2021 - 2023",
@@ -24,6 +42,7 @@
     ]
   },
   {
+    "id": "it-support",
     "role": "IT Project Support",
     "company": "Equipos multidisciplina",
     "period": "2019 - 2021",
