@@ -2,9 +2,11 @@
 import { ref } from 'vue'
 import { useContent } from '../composables/useContent'
 import { useExperience } from '../composables/useExperience'
+import { useEducation } from '../composables/useEducation'
 
 const { presentation } = useContent()
 const { experiences } = useExperience()
+const { categories, items: education, activeCategory, setCategory } = useEducation()
 
 const timelineRef = ref<HTMLElement | null>(null)
 const expandedId = ref<string | null>(null)
@@ -123,6 +125,62 @@ const toggle = (id: string) => {
             </transition>
           </article>
         </div>
+      </div>
+    </section>
+
+    <section class="space-y-6">
+      <div class="space-y-2">
+        <p class="text-xs font-semibold uppercase tracking-[0.14em] text-slate-500">Formacion</p>
+        <h2 class="text-2xl font-semibold tracking-tight text-slate-900">Estudios y certificaciones</h2>
+        <p class="text-sm text-slate-600">Carreras, certificaciones y cursos relevantes.</p>
+      </div>
+
+      <div class="flex flex-wrap gap-2">
+        <button
+          v-for="cat in categories"
+          :key="cat"
+          type="button"
+          class="rounded-full border px-3 py-1 text-sm font-semibold transition"
+          :class="
+            activeCategory === cat
+              ? 'border-slate-900 bg-slate-900 text-white shadow-sm'
+              : 'border-slate-200 bg-white text-slate-700 hover:border-slate-300'
+          "
+          @click="setCategory(cat)"
+        >
+          {{ cat === 'all' ? 'Todo' : cat }}
+        </button>
+      </div>
+
+      <div class="grid gap-4 md:grid-cols-2">
+        <article
+          v-for="edu in education"
+          :key="edu.id"
+          class="flex h-full flex-col gap-3 rounded-xl border border-slate-200 bg-white/90 p-5 shadow-sm ring-1 ring-slate-100 transition hover:-translate-y-0.5 hover:shadow-md"
+        >
+          <div class="flex items-start justify-between gap-2">
+            <div>
+              <p class="text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">{{ edu.category }}</p>
+              <h3 class="text-lg font-semibold text-slate-900">{{ edu.title }}</h3>
+              <p class="text-sm font-semibold text-slate-700">{{ edu.institution }}</p>
+            </div>
+            <span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-semibold text-slate-700">
+              {{ edu.year }}
+            </span>
+          </div>
+          <p v-if="edu.details" class="text-sm text-slate-600">
+            {{ edu.details }}
+          </p>
+          <div v-if="edu.skills?.length" class="flex flex-wrap gap-2">
+            <span
+              v-for="skill in edu.skills"
+              :key="skill"
+              class="rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-semibold text-slate-700 shadow-sm"
+            >
+              {{ skill }}
+            </span>
+          </div>
+        </article>
       </div>
     </section>
   </section>

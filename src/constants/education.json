@@ -1,0 +1,165 @@
+[
+  {
+    "id": "ing-sistemas",
+    "title": "Ingeniería en Sistemas",
+    "institution": "Universidad (en curso)",
+    "year": "Actual",
+    "category": "carrera",
+    "details": "Formación de grado orientada a software, arquitectura y gestión de proyectos.",
+    "skills": ["Arquitectura de software", "Algoritmos", "Gestión de proyectos"]
+  },
+  {
+    "id": "medicina-barcelo",
+    "title": "Medicina",
+    "institution": "Fundación Barceló",
+    "year": "2023 - 2024",
+    "category": "carrera",
+    "details": "Carrera de Medicina cursada durante dos años. Primer año finalizado con promedio 9.50. Segundo año cursado hasta mitad de año.",
+    "status": "abandonado",
+    "skills": ["Anatomía", "Neurociencia básica", "Comunicación", "Estudio autónomo", "Disciplina académica"]
+  },
+  {
+    "id": "tec-programacion",
+    "title": "Técnico en Programación",
+    "institution": "Escuela Técnica N°2",
+    "year": "2017",
+    "category": "carrera",
+    "details": "Formación técnica con bases sólidas en desarrollo, lógica y fundamentos de software.",
+    "skills": ["Programación", "Bases de datos", "Patrones básicos"]
+  },
+  {
+    "id": "fullstack-utn",
+    "title": "Diplomatura Full Stack Developer",
+    "institution": "UTN.BA",
+    "year": "2020",
+    "category": "certificacion",
+    "details": "Desarrollo full stack con enfoque práctico en frontend y backend.",
+    "skills": ["JavaScript", "Frontend", "Backend"]
+  },
+  {
+    "id": "utn-angular",
+    "title": "Desarrollo con Angular",
+    "institution": "UTN.BA",
+    "year": "2020",
+    "category": "certificacion",
+    "details": "Curso oficial UTN con carga horaria de 30h. Nota: Sobresaliente.",
+    "skills": ["Angular", "Frontend", "TypeScript"]
+  },
+  {
+    "id": "utn-react",
+    "title": "Desarrollo en React JS",
+    "institution": "UTN.BA",
+    "year": "2020",
+    "category": "certificación",
+    "details": "Formación en desarrollo de interfaces con React.",
+    "skills": ["React", "Frontend", "JavaScript"]
+  },
+  {
+    "id": "google-activate-mobile",
+    "title": "Desarrollo de Apps Móviles",
+    "institution": "Google Activate",
+    "year": "2021",
+    "category": "certificación",
+    "details": "Diseño y desarrollo de apps móviles multiplataforma.",
+    "skills": ["Mobile", "Desarrollo", "Arquitectura"]
+  },
+  {
+    "id": "platzi-diseno",
+    "title": "Diseño para Programadores",
+    "institution": "Platzi",
+    "year": "2025",
+    "category": "curso",
+    "details": "Principios de diseño aplicados al desarrollo.",
+    "skills": ["UI", "Diseño", "Layout"]
+  },
+  {
+    "id": "platzi-uxui",
+    "title": "Fundamentos de Diseño de Interfaces UX/UI",
+    "institution": "Platzi",
+    "year": "2025",
+    "category": "curso",
+    "details": "Bases de diseño de interfaces y experiencia de usuario.",
+    "skills": ["UX", "UI", "Interacción"]
+  },
+  {
+    "id": "platzi-uxwriting",
+    "title": "Introducción a UX Writing",
+    "institution": "Platzi",
+    "year": "2025",
+    "category": "curso",
+    "details": "Redacción orientada a interfaces y experiencia de usuario.",
+    "skills": ["UX Writing", "Comunicación", "Contenido"]
+  },
+  {
+    "id": "platzi-neurofeedback",
+    "title": "La Neurociencia del Feedback",
+    "institution": "Platzi",
+    "year": "2025",
+    "category": "curso",
+    "details": "Fundamentos de neurociencia aplicados al feedback efectivo.",
+    "skills": ["Feedback", "Comunicación", "Neurociencia"]
+  },
+  {
+    "id": "linkedin-agile-transicion",
+    "title": "Transición de gestión de proyectos en cascada a Agile",
+    "institution": "LinkedIn Learning",
+    "year": "2025",
+    "category": "curso",
+    "details": "Adaptación de modelos tradicionales a metodologías ágiles.",
+    "skills": ["Agile", "Gestión", "Scrum"]
+  },
+  {
+    "id": "linkedin-manager",
+    "title": "Sé el manager que nadie quiere dejar",
+    "institution": "LinkedIn Learning",
+    "year": "2025",
+    "category": "curso",
+    "details": "Gestión de equipos y liderazgo centrado en personas.",
+    "skills": ["Gestión de personas", "Liderazgo", "Comunicación"]
+  },
+  {
+    "id": "linkedin-agile-fundamentos",
+    "title": "Fundamentos de la gestión de proyectos ágil",
+    "institution": "LinkedIn Learning",
+    "year": "2025",
+    "category": "curso",
+    "details": "Bases de metodologías ágiles y gestión de proyectos.",
+    "skills": ["Metodologías ágiles", "Gestión de proyectos"]
+  },
+  {
+    "id": "linkedin-inteligencia-emocional",
+    "title": "Comunicar con inteligencia emocional",
+    "institution": "LinkedIn Learning",
+    "year": "2025",
+    "category": "curso",
+    "details": "Comunicación efectiva basada en inteligencia emocional.",
+    "skills": ["Inteligencia emocional", "Comunicación interpersonal"]
+  },
+  {
+    "id": "linkedin-agile-reuniones",
+    "title": "Agile en acción: Impulsar reuniones ágiles y productivas",
+    "institution": "LinkedIn Learning",
+    "year": "2025",
+    "category": "curso",
+    "details": "Mejora de dinámicas de reuniones y productividad en equipos ágiles.",
+    "skills": ["Agile", "Dirección de reuniones", "Gestión"]
+  },
+  {
+    "id": "linkedin-agile-equipo",
+    "title": "Agile en acción: Construye tu equipo ágil",
+    "institution": "LinkedIn Learning",
+    "year": "2025",
+    "category": "curso",
+    "details": "Liderazgo ágil y formación de equipos de alto rendimiento.",
+    "skills": ["Liderazgo Agile", "Gestión de equipos"]
+  },
+  {
+    "id": "olimpiadas-inet",
+    "title": "Olimpiadas de Programación INET",
+    "institution": "Ministerio de Educación",
+    "year": "2017",
+    "category": "reconocimiento",
+    "details": "Participación en Olimpiadas jurisdiccionales de Electrónica y Programación.",
+    "skills": ["Programación", "Electrónica", "Resolución de problemas"]
+  }
+]
