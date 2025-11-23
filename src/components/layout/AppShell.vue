@@ -13,7 +13,7 @@ import AppFooter from './AppFooter.vue'
 
     <main class="flex-1 w-full">
       <div class="mx-auto max-w-5xl px-6 py-12 md:py-16">
-        <div class="p-8 md:p-10">
+        <div class="md:p-10">
           <slot />
         </div>
       </div>

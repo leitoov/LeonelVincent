@@ -22,7 +22,7 @@ const toggle = (id: string) => {
 
 <template>
   <section class="flex flex-col gap-10">
-    <div class="relative flex flex-col gap-6 rounded-2xl bg-white p-8 shadow-xl ring-1 ring-slate-100 md:p-10 pb-14">
+    <div class="relative flex flex-col gap-6 rounded-2xl bg-white p-3 shadow-xl ring-1 ring-slate-100 md:p-10 pb-14">
       <div class="flex flex-col gap-3 md:flex-row md:items-start md:justify-between">
         <div>
           <h1 class="text-3xl font-semibold tracking-tight text-slate-900 md:text-4xl">
