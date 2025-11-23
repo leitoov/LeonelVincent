@@ -3,7 +3,7 @@
     <div class="flex w-full flex-col gap-1 px-6 py-4 text-sm text-slate-600 md:flex-row md:items-center md:justify-between">
       <span>© {{ new Date().getFullYear() }} Leonel Vincent</span>
       <div class="flex items-center gap-3 text-xs text-slate-500">
-        <span>Hecho con Vue 3 + Tailwind</span>
+        <span>Desarrollador | Coordinador IT</span>
         <slot name="extra" />
       </div>
     </div>

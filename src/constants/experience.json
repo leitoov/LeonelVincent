@@ -4,71 +4,194 @@
     "role": "Full Stack Developer & Technical Coordinator",
     "company": "Stefanini LATAM",
     "period": "2025 - Actualidad",
-    "location": "Hibrido",
-    "summary": "Participacion en desarrollo y coordinacion tecnica para plataforma OLA (Grupo CVC Corp), integrando un proveedor de excursiones y trabajando sobre el monolito legacy.",
-    "description": "Colabore en el desarrollo del middleware en PHP 8.4/Laravel 12 para integrar un proveedor de excursiones y, sobre todo, en el desacople e integracion con el monolito legacy. Me enfoque en analisis de requerimientos, documentacion, refinamiento y seguimiento en Jira, coordinacion de tareas con el equipo y QA de la integracion.",
+    "location": "Híbrido",
+    "summary": "Participación en desarrollo y coordinación técnica para la plataforma OLA (Grupo CVC Corp), integrando un proveedor de excursiones y desacoplando el monolito legacy.",
+    "description": "Colaboré en el desarrollo de un middleware en PHP 8.4/Laravel 12 para integrar un proveedor de excursiones, diseñando reglas de negocio e integrando la solución con el monolito legacy del cliente. Asumí tareas de análisis de requerimientos, documentación, refinamiento y seguimiento en Jira, así como la coordinación de tareas con el equipo, UX y QA. Fui designado como 'focus de gestión', combinando desarrollo, liderazgo técnico y soporte en decisiones funcionales.",
     "highlights": [
-      "Apoyo en middleware PHP 8.4/Laravel 12 y ajustes en monolito legacy",
-      "Desacople e integracion con proveedor externo, pruebas y QA",
-      "Refinamiento en Jira, documentacion y coordinacion de tareas del equipo"
+      "Desarrollo de middleware PHP 8.4/Laravel 12 e integración con sistema legacy",
+      "Desacople e integración con proveedor externo, QA y validación funcional",
+      "Refinamiento en Jira, documentación técnica y coordinación del equipo"
     ],
-    "technologies": ["PHP 8.4", "Laravel 12", "Monolito PHP 7.4 legacy", "APIs REST", "Docker", "MySQL", "MongoDB", "Linux", "Jira"],
-    "skills": ["Analisis de requerimientos", "Documentacion funcional/tecnica", "Coordinacion de equipo", "Refinamiento y priorizacion en Jira", "Integracion de proveedores", "Backlog tecnico", "Comunicacion con UX y analistas"]
+    "technologies": [
+      "PHP 8.4",
+      "Laravel 12",
+      "Monolito PHP 7.4 legacy",
+      "APIs REST",
+      "Docker",
+      "MySQL",
+      "MongoDB",
+      "JavaScript",
+      "Codex IA",
+      "Git",
+      "Linux",
+      "Jira"
+    ],
+    "skills": [
+      "Análisis de requerimientos",
+      "Documentación funcional/técnica",
+      "Coordinación de equipo",
+      "Refinamiento y priorización en Jira",
+      "Integración de proveedores",
+      "Backlog técnico",
+      "Comunicación con UX y analistas"
+    ]
   },
   {
     "id": "famiq",
     "role": "Full Stack Developer",
     "company": "Famiq SRL",
     "period": "2023 - 2025",
-    "location": "Hibrido",
-    "summary": "Desarrollo y evolucion de La PIN (e-commerce de aceros inoxidables), integrando SAP y modernizando el frontend.",
-    "description": "Implemente nuevas funcionalidades en Vue 2/3 y Laravel 8, migrando progresivamente la capa de presentacion de Twig a Vue. Desarrolle integraciones criticas con SAP via XML para sincronizar stock, precios y pedidos. Responsable del soporte en produccion, manteniendo el backlog de incidencias en cero, coordinando reuniones interareas y documentando procesos. Disene un esquema de categorizacion de errores en Redmine que mejoro trazabilidad y tiempos de resolucion.",
+    "location": "Híbrido",
+    "summary": "Desarrollo y evolución de La PIN (e-commerce de aceros inoxidables), integrando SAP y modernizando el frontend.",
+    "description": "Implementé nuevas funcionalidades en Vue 2/3 y Laravel 8, migrando progresivamente la capa de presentación de Twig a Vue. Desarrollé integraciones críticas con SAP vía XML para sincronizar stock, precios y pedidos. Fui responsable del soporte en producción, manteniendo el backlog de incidencias en cero, coordinando reuniones interáreas y documentando procesos. Diseñé un sistema de categorización de errores en Redmine que mejoró la trazabilidad, la velocidad de resolución y la prevención de fallas.",
     "highlights": [
-      "Migracion gradual de Twig hacia Vue para reducir deuda tecnica",
-      "Integracion estable con SAP/XML para sincronizar datos criticos",
-      "Backlog de errores en cero y coordinacion interareas para soporte",
-      "Categorizacion de errores en Redmine mejorando trazabilidad"
+      "Migración gradual de Twig hacia Vue para reducir deuda técnica",
+      "Integración estable con SAP/XML para sincronizar datos críticos",
+      "Backlog de errores en cero y coordinación interáreas en soporte",
+      "Categorización de errores en Redmine mejorando trazabilidad"
     ],
-    "technologies": ["Vue 2", "Vue 3", "Twig", "Laravel 8", "SAP/XML", "Microservicios", "Redmine", "Figma", "Git"],
-    "skills": ["Soporte de produccion", "Integraciones SAP", "Documentacion y trazabilidad", "Coordinacion interareas", "Mejora continua"]
+    "technologies": [
+      "Vue 2",
+      "Vue 3",
+      "Twig",
+      "Symfony 7.4",
+      "Laravel 8 / 10",
+      "JavaScript",
+      "SAP/XML",
+      "Codex IA",
+      "Docker",
+      "MySQL",
+      "Microservicios",
+      "Redmine",
+      "Figma",
+      "Git"
+    ],
+    "skills": [
+      "Soporte de producción",
+      "Integraciones SAP",
+      "Documentación y trazabilidad",
+      "Coordinación interáreas",
+      "Mejora continua"
+    ]
   },
   {
-    "id": "freelance",
+    "id": "satoshitango",
     "role": "Full Stack Developer",
-    "company": "Freelance",
-    "period": "2023 - Actualidad",
-    "location": "Remoto",
-    "summary": "Diseno y desarrollo de soluciones web con foco en performance y experiencia de usuario.",
-    "highlights": [
-      "Construccion de SPAs con Vue/Angular/React",
-      "Integraciones con APIs REST y bases de datos MySQL/MongoDB",
-      "Automatizacion de despliegues y CI/CD"
-    ]
-  },
-  {
-    "id": "backend-php",
-    "role": "Backend Developer",
-    "company": "Proyectos PHP",
+    "company": "SatoshiTango",
     "period": "2021 - 2023",
-    "location": "Hibrido",
-    "summary": "Implementacion de APIs y servicios con Laravel, Symfony y Yii.",
+    "location": "Híbrido",
+    "summary": "Desarrollo de la wallet de criptomonedas y participación en el lanzamiento de la primera tarjeta cripto del país.",
+    "description": "Participé en el desarrollo y actualización de la wallet cripto de SatoshiTango, trabajando en la app mobile y la plataforma web. Migré partes de la aplicación a Angular con Ionic, integrando validación biométrica (rostro y lector de tarjetas). Desarrollé landing pages multilenguaje con Next.js y contribuí en backend con Laravel 7. Formé parte del equipo que lanzó la primera tarjeta cripto del país, aportando funcionalidades, mejoras visuales y resolución de incidencias.",
     "highlights": [
-      "Optimizacion de consultas y diseno de esquemas",
-      "Autenticacion, autorizaciones y manejo de sesiones",
-      "Documentacion y handoff para equipos frontend"
+      "Participación en el lanzamiento de la primera tarjeta cripto del país",
+      "Integración biométrica (rostro y tarjetas) en la aplicación mobile",
+      "Migración a Angular/Ionic y mejora de experiencia de usuario",
+      "Landing pages multi idioma con Next.js"
+    ],
+    "technologies": [
+      "Angular",
+      "JavaScript",
+      "Ionic",
+      "Next.js",
+      "Laravel 7",
+      "PHP",
+      "MySQL",
+      "Git"
+    ],
+    "skills": [
+      "Desarrollo mobile",
+      "Integración biométrica",
+      "Resolución de incidencias",
+      "Mejoras UX/UI",
+      "Trabajo multidisciplinario"
     ]
   },
   {
-    "id": "it-support",
-    "role": "IT Project Support",
-    "company": "Equipos multidisciplina",
-    "period": "2019 - 2021",
-    "location": "On-site",
-    "summary": "Soporte en gestion de proyectos y aseguramiento de calidad.",
+    "id": "solventa",
+    "role": "Full Stack Developer",
+    "company": "Solventa Fintech",
+    "period": "2020 - 2021",
+    "location": "Presencial",
+    "summary": "Desarrollo de un sistema de métricas en tiempo real para call centers en varios países.",
+    "description": "Desarrollé un sistema de control y métricas en tiempo real utilizado en Argentina, Perú, Colombia y EE.UU. El proyecto incluyó paneles de llamadas, descansos, comisiones y KPIs. Implementé tanto el frontend como el backend, adaptando funcionalidades a cada país. Trabajé con PHP (Yii), jQuery y MySQL, garantizando escalabilidad y estabilidad en un entorno de alto flujo de datos.",
     "highlights": [
-      "Seguimiento de tareas con metodologias agiles",
-      "Pruebas funcionales y reporte de incidencias",
-      "Mejora continua en procesos y documentacion"
+      "Sistema de métricas en tiempo real para múltiples países",
+      "Backend y frontend completos con PHP (Yii) y jQuery",
+      "Adaptación de funcionalidades por país",
+      "Alta autonomía en decisiones técnicas"
+    ],
+    "technologies": [
+      "PHP (Yii)",
+      "jQuery",
+      "MySQL",
+      "APIs",
+      "MySQL",
+      "Git"
+    ],
+    "skills": [
+      "Desarrollo de sistemas en tiempo real",
+      "Adaptación por contexto",
+      "Escalabilidad",
+      "Autonomía técnica"
+    ]
+  },
+  {
+    "id": "sysworld",
+    "role": "Full Stack Developer",
+    "company": "SysWorld",
+    "period": "2019 - 2020",
+    "location": "Presencial",
+    "summary": "Desarrollo de soluciones web y mobile para Toyota y Banco Coinag.",
+    "description": "Participé en proyectos simultáneos para Toyota y Banco Coinag, desarrollando soluciones web y mobile con Angular e Ionic. Implementé un sistema de envío automatizado de correos con templates y trabajé sobre estructuras heredadas en HTML clásico y PHP puro. Entorno altamente dinámico que requirió adaptación a múltiples tecnologías y equipos.",
+    "highlights": [
+      "Soluciones web/mobile para Toyota y Banco Coinag",
+      "Sistema automatizado de correos con templates",
+      "Trabajo con tecnologías modernas y legacy",
+      "Adaptación rápida a distintos equipos"
+    ],
+    "technologies": [
+      "Angular",
+      "Ionic",
+      "PHP",
+      "MySQL",
+      "HTML clásico",
+      "Git"
+    ],
+    "skills": [
+      "Versatilidad tecnológica",
+      "Desarrollo híbrido",
+      "Manejo de legacy",
+      "Comunicación interequipos"
+    ]
+  },
+  {
+    "id": "impulso360",
+    "role": "Full Stack Developer",
+    "company": "Impulso 360",
+    "period": "2018 - 2019",
+    "location": "Presencial",
+    "summary": "Desarrollo de sitios web, tiendas online y soluciones personalizadas para pymes.",
+    "description": "Desarrollé sitios web, e-commerce y sistemas personalizados para diversos clientes. Utilicé WordPress para construir templates dinámicos y PHP/JavaScript para funcionalidades a medida. También participé en el diseño de apps híbridas con Ionic y Angular, brindando soporte completo desde la maquetación hasta la puesta en producción.",
+    "highlights": [
+      "Desarrollo de tiendas online y sitios personalizados",
+      "Templates dinámicos en WordPress",
+      "Funciones a medida con PHP y JavaScript",
+      "Participación en apps híbridas"
+    ],
+    "technologies": [
+      "WordPress",
+      "PHP",
+      "MySQL",
+      "JavaScript",
+      "Ionic",
+      "Angular",
+      "Git"
+    ],
+    "skills": [
+      "Desarrollo para pymes",
+      "Soluciones personalizadas",
+      "Maquetación y producción",
+      "Comunicación con cliente final"
     ]
   }
 ]
