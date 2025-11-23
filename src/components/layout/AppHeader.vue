@@ -1,6 +1,6 @@
 <template>
   <header class="w-full border-b border-slate-200 bg-white/80 backdrop-blur">
-    <div class="flex w-full items-center justify-between px-6 py-4">
+    <div class="flex w-full flex-nowrap items-center justify-between gap-3 px-6 py-4">
       <div class="flex items-center gap-2">
         <div class="grid h-9 w-9 place-items-center rounded-xl bg-slate-900 text-sm font-bold text-white">LV</div>
         <div>
