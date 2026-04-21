@@ -28,6 +28,87 @@
     "skills": ["Programación", "Bases de datos", "Patrones básicos"]
   },
   {
+    "id": "linkedin-gestion-equipos",
+    "title": "Cómo gestionar equipos de trabajo",
+    "institution": "LinkedIn Learning",
+    "year": "2026",
+    "category": "curso",
+    "details": "Liderazgo y dirección de equipos en entornos corporativos.",
+    "skills": ["Dirección de equipos", "Liderazgo", "Gestión"]
+  },
+  {
+    "id": "linkedin-hablar-escuchar",
+    "title": "Cómo hablar para que te escuchen",
+    "institution": "LinkedIn Learning",
+    "year": "2026",
+    "category": "curso",
+    "details": "Habilidades de comunicación efectiva y persuasión.",
+    "skills": ["Comunicación", "Habilidades sociales"]
+  },
+  {
+    "id": "linkedin-productividad-ia",
+    "title": "Trucos de productividad con IA para reimaginar tu jornada laboral",
+    "institution": "LinkedIn Learning",
+    "year": "2026",
+    "category": "curso",
+    "details": "Uso de herramientas de IA para optimizar procesos y flujos de trabajo.",
+    "skills": ["IA para empresas", "Productividad", "Eficiencia"]
+  },
+  {
+    "id": "linkedin-prompt-engineering",
+    "title": "Prompt Engineering: Aprende a hablar con una IA generativa",
+    "institution": "LinkedIn Learning",
+    "year": "2026",
+    "category": "curso",
+    "details": "Diseño y optimización de prompts para modelos de lenguaje.",
+    "skills": ["Prompt Engineering", "Inteligencia artificial"]
+  },
+  {
+    "id": "linkedin-lenguaje-influencia",
+    "title": "El lenguaje de la influencia: Cómo persuadir y generar impacto",
+    "institution": "LinkedIn Learning",
+    "year": "2026",
+    "category": "curso",
+    "details": "Técnicas de oratoria y persuasión para generar impacto profesional.",
+    "skills": ["Oratoria", "Persuasión", "Influencia"]
+  },
+  {
+    "id": "linkedin-ia-creativos",
+    "title": "IA Generativa para Profissionais Criativos",
+    "institution": "LinkedIn Learning",
+    "year": "2026",
+    "category": "curso",
+    "details": "Exploración de herramientas de IA aplicadas a procesos creativos y ética.",
+    "skills": ["IA Generativa", "Creatividad", "Ética"]
+  },
+  {
+    "id": "linkedin-escucha-activa-secreto",
+    "title": "La escucha activa: El secreto de la comunicación efectiva",
+    "institution": "LinkedIn Learning",
+    "year": "2026",
+    "category": "curso",
+    "details": "Desarrollo de habilidades de escucha profunda para mejorar la interacción.",
+    "skills": ["Comunicación", "Empatía"]
+  },
+  {
+    "id": "linkedin-liderazgo-ie-march",
+    "title": "Liderazgo con inteligencia emocional",
+    "institution": "LinkedIn Learning",
+    "year": "2026",
+    "category": "curso",
+    "details": "Gestión de equipos basada en el autoconocimiento y la empatía.",
+    "skills": ["Inteligencia emocional", "Liderazgo"]
+  },
+  {
+    "id": "linkedin-mejora-escucha-activa",
+    "title": "Mejora tu habilidad de escucha activa",
+    "institution": "LinkedIn Learning",
+    "year": "2026",
+    "category": "curso",
+    "details": "Técnicas prácticas para potenciar la receptividad y comprensión.",
+    "skills": ["Escucha activa", "Comunicación"]
+  },
+  {
     "id": "fullstack-utn",
     "title": "Diplomatura Full Stack Developer",
     "institution": "UTN.BA",
@@ -152,6 +233,69 @@
     "category": "curso",
     "details": "Liderazgo ágil y formación de equipos de alto rendimiento.",
     "skills": ["Liderazgo Agile", "Gestión de equipos"]
+  },
+  {
+    "id": "santander-agile",
+    "title": "Gestión de Proyectos y Fundamentos de metodología Agile",
+    "institution": "Santander",
+    "year": "2025",
+    "category": "certificacion",
+    "details": "ID de credencial: OA-2025-1220002099453.",
+    "skills": ["Gestión de proyectos", "Liderazgo Agile"]
+  },
+  {
+    "id": "google-foundations-pm",
+    "title": "Foundations of Project Management",
+    "institution": "Google",
+    "year": "2025",
+    "category": "certificacion",
+    "details": "ID de credencial: 2MVGAT3P3YPU.",
+    "skills": ["Project Management", "Agile"]
+  },
+  {
+    "id": "linkedin-agile-trello",
+    "title": "Gestión de proyectos ágiles con Trello",
+    "institution": "LinkedIn Learning",
+    "year": "2025",
+    "category": "curso",
+    "details": "Uso de Trello para la gestión visual de proyectos ágiles.",
+    "skills": ["Trello", "Gestión ágil"]
+  },
+  {
+    "id": "linkedin-agile-herramientas",
+    "title": "Gestión de proyectos ágiles: Comparación de herramientas ágiles",
+    "institution": "LinkedIn Learning",
+    "year": "2025",
+    "category": "curso",
+    "details": "Análisis y comparativa de software para gestión de proyectos.",
+    "skills": ["Gestión ágil", "Herramientas"]
+  },
+  {
+    "id": "linkedin-agile-profesional",
+    "title": "Conviértete en profesional en gestión de proyectos ágiles",
+    "institution": "LinkedIn Learning",
+    "year": "2025",
+    "category": "curso",
+    "details": "Desarrollo de historias de usuario y metodologías ágiles.",
+    "skills": ["User Stories", "Agile"]
+  },
+  {
+    "id": "linkedin-agile-project",
+    "title": "Project: Gestión de proyectos ágiles",
+    "institution": "LinkedIn Learning",
+    "year": "2025",
+    "category": "curso",
+    "details": "Aplicación práctica de metodologías ágiles en proyectos reales.",
+    "skills": ["Gestión ágil", "Project Management"]
+  },
+  {
+    "id": "linkedin-agile-retrospectivas",
+    "title": "Agile en acción: Mejorar con retrospectivas ágiles",
+    "institution": "LinkedIn Learning",
+    "year": "2025",
+    "category": "curso",
+    "details": "Optimización de equipos mediante procesos de retrospectiva.",
+    "skills": ["Retrospectiva", "Mejora continua"]
   },
   {
     "id": "olimpiadas-inet",

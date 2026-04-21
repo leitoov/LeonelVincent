@@ -1,16 +1,16 @@
 [
   {
     "id": "stefanini",
-    "role": "Full Stack Developer & Technical Coordinator",
+    "role": "Team Lead B2B (CVC-Ola)",
     "company": "Stefanini LATAM",
     "period": "2025 - Actualidad",
     "location": "Híbrido",
     "summary": "Participación en desarrollo y coordinación técnica para la plataforma OLA (Grupo CVC Corp), integrando un proveedor de excursiones y desacoplando el monolito legacy.",
-    "description": "Colaboré en el desarrollo de un middleware en PHP 8.4/Laravel 12 para integrar un proveedor de excursiones, diseñando reglas de negocio e integrando la solución con el monolito legacy del cliente. Asumí tareas de análisis de requerimientos, documentación, refinamiento y seguimiento en Jira, así como la coordinación de tareas con el equipo, UX y QA. Fui designado como 'focus de gestión', combinando desarrollo, liderazgo técnico y soporte en decisiones funcionales.",
+    "description": "Lidero el equipo técnico para la plataforma B2B de turismo (CVC-Ola), gestionando el ciclo completo de desarrollo. Mi día a día incluye el armado y priorización del backlog técnico, la definición de soluciones en conjunto con analistas funcionales y la garantía de calidad mediante code reviews y mentoría técnica constante al equipo.",
     "highlights": [
-      "Desarrollo de middleware PHP 8.4/Laravel 12 e integración con sistema legacy",
-      "Desacople e integración con proveedor externo, QA y validación funcional",
-      "Refinamiento en Jira, documentación técnica y coordinación del equipo"
+      "Liderazgo técnico y gestión de backlog para proyectos B2B de alta complejidad",
+      "Garantía de calidad mediante Code Reviews y procesos de mejora continua",
+      "Colaboración estratégica con analistas funcionales para la definición de soluciones"
     ],
     "technologies": [
       "PHP 8.4",
