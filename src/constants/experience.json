@@ -5,9 +5,10 @@
     "company": "Stefanini LATAM",
     "period": "2025 - Actualidad",
     "location": "Híbrido",
-    "summary": "Participación en desarrollo y coordinación técnica para la plataforma OLA (Grupo CVC Corp), integrando un proveedor de excursiones y desacoplando el monolito legacy.",
-    "description": "Lidero el equipo técnico para la plataforma B2B de turismo (CVC-Ola), gestionando el ciclo completo de desarrollo. Mi día a día incluye el armado y priorización del backlog técnico, la definición de soluciones en conjunto con analistas funcionales y la garantía de calidad mediante code reviews y mentoría técnica constante al equipo.",
+    "summary": "Liderazgo de equipos, coordinación técnica, desarrollo y mejora continua sobre plataforma B2B de turismo, integraciones y desacople hacia microservicios.",
+    "description": "Mi rol actual abarca tanto el desarrollo como el liderazgo de un equipo integrado por 4 desarrolladores. Trabajamos en proyectos de integracion de proveedores, refactor sobre modulos existentes y desacople de estructura monolitica a microservicios.",
     "highlights": [
+      "Desarrollo fullstack de alto nivel",
       "Liderazgo técnico y gestión de backlog para proyectos B2B de alta complejidad",
       "Garantía de calidad mediante Code Reviews y procesos de mejora continua",
       "Colaboración estratégica con analistas funcionales para la definición de soluciones"
@@ -15,8 +16,12 @@
     "technologies": [
       "PHP 8.4",
       "Laravel 12",
+      "Java Spring Boot",
       "Monolito PHP 7.4 legacy",
       "APIs REST",
+      "Gemini",
+      "Claude",
+      "OpenIA",
       "Docker",
       "MySQL",
       "MongoDB",
@@ -27,6 +32,9 @@
       "Jira"
     ],
     "skills": [
+      "Desarrollo",
+      "Inteligencia Artificial",
+      "Microservicios",
       "Análisis de requerimientos",
       "Documentación funcional/técnica",
       "Coordinación de equipo",
@@ -34,7 +42,18 @@
       "Integración de proveedores",
       "Backlog técnico",
       "Comunicación con UX y analistas"
-    ]
+    ],
+    "links": [
+      {
+        "label": "Web Ola",
+        "url": "https://www.ola.com.ar/"
+      },
+      {
+        "label": "Figma",
+        "url": "https://www.figma.com/design/21dKStdgbNU2IoWzmmg7LA/Proyectos-en-Ola--cvc-?node-id=0-1&t=G0zBG0qzZWCnJDeE-1"
+      }
+    ],
+    "embedUrl": "https://embed.figma.com/design/21dKStdgbNU2IoWzmmg7LA/Proyectos-en-Ola--cvc-?node-id=0-1&embed-host=share"
   },
   {
     "id": "famiq",
@@ -58,6 +77,7 @@
       "Laravel 8 / 10",
       "JavaScript",
       "SAP/XML",
+      "OpenIA",
       "Codex IA",
       "Docker",
       "MySQL",
@@ -71,7 +91,14 @@
       "Integraciones SAP",
       "Documentación y trazabilidad",
       "Coordinación interáreas",
+      "Inteligencia Artificial",
       "Mejora continua"
+    ],
+    "links": [
+      {
+        "label": "Web Famiq",
+        "url": "https://www.famiq.com.ar/"
+      }
     ]
   },
   {
@@ -104,10 +131,16 @@
       "Resolución de incidencias",
       "Mejoras UX/UI",
       "Trabajo multidisciplinario"
+    ],
+    "links": [
+      {
+        "label": "Web SatoshiTango",
+        "url": "https://www.satoshitango.com/"
+      }
     ]
   },
   {
-    "id": "solventa",
+    "id": "Solventa",
     "role": "Full Stack Developer",
     "company": "Solventa Fintech",
     "period": "2020 - 2021",

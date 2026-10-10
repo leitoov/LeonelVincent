@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
 import { useContent } from '../composables/useContent'
 import { useExperience } from '../composables/useExperience'
 import { useEducation } from '../composables/useEducation'
@@ -8,15 +8,14 @@ const { presentation } = useContent()
 const { experiences } = useExperience()
 const { categories, items: education, activeCategory, setCategory } = useEducation()
 
-const timelineRef = ref<HTMLElement | null>(null)
-const expandedId = ref<string | null>(null)
+const experienceRef = ref<HTMLElement | null>(null)
+const selectedExpId = ref<string>(experiences.value[0]?.id ?? '')
+const selectedExperience = computed(() => {
+  return experiences.value.find((exp) => exp.id === selectedExpId.value) ?? experiences.value[0]
+})
 
-const scrollToTimeline = () => {
-  timelineRef.value?.scrollIntoView({ behavior: 'smooth', block: 'start' })
-}
-
-const toggle = (id: string) => {
-  expandedId.value = expandedId.value === id ? null : id
+const scrollToExperience = () => {
+  experienceRef.value?.scrollIntoView({ behavior: 'smooth', block: 'start' })
 }
 </script>
 
@@ -44,7 +43,7 @@ const toggle = (id: string) => {
         <button
           type="button"
           class="grid h-14 w-14 place-items-center rounded-full bg-white text-slate-900 shadow-[0_10px_30px_rgba(15,23,42,0.18)] ring-2 ring-white/70 transition hover:shadow-[0_16px_40px_rgba(15,23,42,0.22)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-500 animate-floating"
-          @click="scrollToTimeline"
+          @click="scrollToExperience"
           aria-label="Ver experiencia laboral"
         >
           <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor" aria-hidden="true">
@@ -54,78 +53,145 @@ const toggle = (id: string) => {
       </div>
     </div>
 
-    <section ref="timelineRef" class="space-y-6">
+    <section ref="experienceRef" class="space-y-6">
       <div class="space-y-2">
         <p class="text-xs font-semibold uppercase tracking-[0.14em] text-slate-500 mt-6">Experiencia</p>
-        <h2 class="text-2xl font-semibold tracking-tight text-slate-900">Línea de tiempo</h2>
-        <p class="text-sm text-slate-600">Recorrido de roles y proyectos, de lo más reciente a lo anterior.</p>
+        <h2 class="text-2xl font-semibold tracking-tight text-slate-900">Experiencia laboral</h2>
+        <p class="text-sm text-slate-600">Selecciona cada empresa o rol para explorar el detalle y logros en profundidad.</p>
       </div>
 
-      <div class="relative">
-        <div class="absolute left-[14px] top-0 h-full w-px bg-slate-200 md:left-1/2 md:-translate-x-1/2" />
-        <div class="space-y-8">
-          <article
-            v-for="(exp, index) in experiences"
-            :key="`${exp.role}-${exp.company}`"
-            :class="[
-              'relative flex flex-col gap-3 rounded-xl border border-slate-200 bg-white/90 p-5 shadow-sm ring-1 ring-slate-100 md:w-[48%] fade-up transition hover:-translate-y-0.5 hover:shadow-md cursor-pointer',
-              index % 2 === 0 ? 'md:mr-auto' : 'md:ml-auto',
-            ]"
-            :style="{ animationDelay: `${index * 120}ms` }"
-            @click="toggle(exp.id)"
+      <!-- Tabs de empresas / roles -->
+      <div class="flex gap-2 overflow-x-auto pb-2 scrollbar-thin">
+        <button
+          v-for="exp in experiences"
+          :key="exp.id"
+          type="button"
+          class="whitespace-nowrap rounded-xl border px-4 py-2.5 text-sm font-semibold transition-all"
+          :class="
+            selectedExpId === exp.id
+              ? 'border-slate-900 bg-slate-900 text-white shadow-sm'
+              : 'border-slate-200 bg-white text-slate-700 hover:border-slate-300 hover:bg-slate-50'
+          "
+          @click="selectedExpId = exp.id"
+        >
+          <span class="block text-left font-medium">{{ exp.company }}</span>
+          <span
+            class="block text-xs font-normal opacity-80"
+            :class="selectedExpId === exp.id ? 'text-slate-300' : 'text-slate-500'"
           >
-            <div
-              :class="[
-                'absolute top-6 h-4 w-4 rounded-full border-4 border-white bg-slate-900 shadow',
-                index % 2 === 0 ? 'left-[6px] md:left-auto md:right-[-12px]' : 'left-[6px] md:right-auto md:left-[-12px]',
-              ]"
-              aria-hidden="true"
-            />
-            <p class="text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">{{ exp.period }}</p>
-            <h3 class="text-xl font-semibold text-slate-900">
-              {{ exp.role }}
-            </h3>
-            <p class="text-sm font-semibold text-slate-700">{{ exp.company }} <span v-if="exp.location" class="text-slate-500">· {{ exp.location }}</span></p>
-            <p class="text-sm text-slate-600">
-              {{ exp.summary }}
-            </p>
-            <ul v-if="exp.highlights?.length" class="mt-1 space-y-1 text-sm text-slate-600">
-              <li v-for="item in exp.highlights" :key="item" class="flex gap-2">
-                <span class="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-slate-400" aria-hidden="true" />
+            {{ exp.period }}
+          </span>
+        </button>
+      </div>
+
+      <!-- Detalle completo de la experiencia seleccionada -->
+      <transition mode="out-in" name="fade">
+        <article
+          v-if="selectedExperience"
+          :key="selectedExperience.id"
+          class="flex flex-col gap-6 rounded-2xl border border-slate-200 bg-white p-6 md:p-8 shadow-sm ring-1 ring-slate-100"
+        >
+          <div class="flex flex-col gap-2 md:flex-row md:items-start md:justify-between border-b border-slate-100 pb-5">
+            <div>
+              <div class="flex flex-wrap items-center gap-2">
+                <h3 class="text-2xl font-semibold text-slate-900">
+                  {{ selectedExperience.role }}
+                </h3>
+                <span class="text-slate-400 font-light">@</span>
+                <span class="text-xl font-medium text-slate-800">{{ selectedExperience.company }}</span>
+              </div>
+              <p v-if="selectedExperience.location" class="mt-1 text-sm text-slate-500">
+                Modalidad: {{ selectedExperience.location }}
+              </p>
+            </div>
+            <span class="inline-flex w-fit items-center rounded-full border border-slate-200 bg-slate-50 px-3.5 py-1 text-xs font-semibold text-slate-700">
+              {{ selectedExperience.period }}
+            </span>
+          </div>
+
+          <div v-if="selectedExperience.summary" class="text-base text-slate-700 leading-relaxed font-medium">
+            {{ selectedExperience.summary }}
+          </div>
+
+          <div v-if="selectedExperience.description" class="rounded-xl bg-slate-50/70 p-4 border border-slate-100 text-sm leading-relaxed text-slate-600">
+            {{ selectedExperience.description }}
+          </div>
+
+          <div v-if="selectedExperience.highlights?.length" class="space-y-3">
+            <h4 class="text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">Logros y responsabilidades destacadas</h4>
+            <ul class="space-y-2">
+              <li
+                v-for="item in selectedExperience.highlights"
+                :key="item"
+                class="flex items-start gap-2 text-sm text-slate-700"
+              >
+                <span class="mt-1.5 inline-block h-1.5 w-1.5 shrink-0 rounded-full bg-slate-400" aria-hidden="true" />
                 <span>{{ item }}</span>
               </li>
             </ul>
-            <transition name="fade">
-              <div v-if="expandedId === exp.id" class="mt-3 space-y-3 rounded-lg border border-slate-200 bg-slate-50/80 p-4">
-                <p v-if="exp.description" class="text-sm text-slate-700">
-                  {{ exp.description }}
-                </p>
-                <div v-if="exp.technologies?.length" class="space-y-2">
-                  <p class="text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">Tecnologías</p>
-                  <div class="flex flex-wrap gap-2">
-                    <span
-                      v-for="tech in exp.technologies"
-                      :key="tech"
-                      class="rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-semibold text-slate-700 shadow-sm"
-                    >
-                      {{ tech }}
-                    </span>
-                  </div>
-                </div>
-                <div v-if="exp.skills?.length" class="space-y-2">
-                  <p class="text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">Habilidades</p>
-                  <ul class="space-y-1 text-sm text-slate-700">
-                    <li v-for="skill in exp.skills" :key="skill" class="flex gap-2">
-                      <span class="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-slate-400" aria-hidden="true" />
-                      <span>{{ skill }}</span>
-                    </li>
-                  </ul>
-                </div>
+          </div>
+
+          <div class="grid gap-6 md:grid-cols-2 pt-2 border-t border-slate-100">
+            <div v-if="selectedExperience.technologies?.length" class="space-y-2.5">
+              <h4 class="text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">Tecnologías</h4>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  v-for="tech in selectedExperience.technologies"
+                  :key="tech"
+                  class="rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-semibold text-slate-700 shadow-sm"
+                >
+                  {{ tech }}
+                </span>
               </div>
-            </transition>
-          </article>
-        </div>
-      </div>
+            </div>
+
+            <div v-if="selectedExperience.skills?.length" class="space-y-2.5">
+              <h4 class="text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">Habilidades</h4>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  v-for="skill in selectedExperience.skills"
+                  :key="skill"
+                  class="rounded-full border border-slate-200 bg-slate-100 px-3 py-1 text-xs font-medium text-slate-700"
+                >
+                  {{ skill }}
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div v-if="selectedExperience.links?.length" class="space-y-2.5 pt-2 border-t border-slate-100">
+            <h4 class="text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">Enlaces y referencias</h4>
+            <div class="flex flex-wrap gap-2.5">
+              <a
+                v-for="link in selectedExperience.links"
+                :key="link.url"
+                :href="link.url"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-1.5 rounded-lg border border-slate-200 bg-slate-50 px-3 py-1.5 text-xs font-medium text-slate-700 shadow-sm transition hover:border-slate-300 hover:bg-white hover:text-slate-900"
+              >
+                <span>{{ link.label }}</span>
+                <svg class="h-3.5 w-3.5 text-slate-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div v-if="selectedExperience.embedUrl" class="space-y-2.5 pt-2 border-t border-slate-100">
+            <h4 class="text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">Vista previa interactiva</h4>
+            <div class="overflow-hidden rounded-xl border border-slate-200 shadow-sm bg-slate-50">
+              <iframe
+                :src="selectedExperience.embedUrl"
+                class="w-full h-[450px] border-0"
+                allowfullscreen
+                loading="lazy"
+                title="Vista previa del proyecto"
+              />
+            </div>
+          </div>
+        </article>
+      </transition>
     </section>
 
     <section class="space-y-6">

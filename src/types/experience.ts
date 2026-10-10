@@ -1,3 +1,8 @@
+export interface ExperienceLink {
+  label: string
+  url: string
+}
+
 export interface Experience {
   id: string
   role: string
@@ -9,4 +14,7 @@ export interface Experience {
   description?: string
   technologies?: string[]
   skills?: string[]
+  links?: ExperienceLink[]
+  embedUrl?: string
 }
+
