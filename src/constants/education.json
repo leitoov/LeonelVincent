@@ -1,5 +1,15 @@
 [
   {
+    "id": "google-ai-specialization",
+    "title": "Google AI Specialization",
+    "institution": "Google / Coursera",
+    "year": "2026",
+    "category": "certificacion",
+    "details": "Especialización completa en Inteligencia Artificial de Google. Incluye los 7 cursos del programa: Fundamentals, Brainstorming & Planning, Research & Insights, Writing & Communicating, Content Creation, Data Analysis y App Building.",
+    "skills": ["Inteligencia Artificial", "GenAI", "Prompt Engineering", "Data Analysis", "AI App Building", "Automatización"],
+    "link": "https://www.coursera.org/specializations/google-ai"
+  },
+  {
     "id": "ing-sistemas",
     "title": "Ingeniería en Sistemas",
     "institution": "Universidad (en curso)",

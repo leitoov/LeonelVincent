@@ -227,7 +227,21 @@ const scrollToExperience = () => {
           <div class="flex items-start justify-between gap-2">
             <div>
               <p class="text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">{{ edu.category }}</p>
-              <h3 class="text-lg font-semibold text-slate-900">{{ edu.title }}</h3>
+              <h3 class="text-lg font-semibold text-slate-900">
+                <a
+                  v-if="edu.link"
+                  :href="edu.link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center gap-1.5 hover:text-blue-600 transition underline-offset-2 hover:underline"
+                >
+                  <span>{{ edu.title }}</span>
+                  <svg class="h-4 w-4 text-slate-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
+                <span v-else>{{ edu.title }}</span>
+              </h3>
               <p class="text-sm font-semibold text-slate-700">{{ edu.institution }}</p>
             </div>
             <span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-semibold text-slate-700">
