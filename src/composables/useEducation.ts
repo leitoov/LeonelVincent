@@ -1,26 +1,25 @@
-import { computed, ref } from 'vue'
+import { useMemo, useState } from 'react'
 import { getEducation } from '../services/education.service'
 import type { EducationItem } from '../types/education'
 
 const allEducation = getEducation()
-const activeCategory = ref<'all' | EducationItem['category']>('all')
+const categories = ['all', 'carrera', 'certificacion', 'curso'] as const
 
 export function useEducation() {
-  const categories = computed(() => ['all', 'carrera', 'certificacion', 'curso'] as const)
-  const items = computed(() =>
-    activeCategory.value === 'all'
-      ? allEducation
-      : allEducation.filter((item) => item.category === activeCategory.value)
-  )
+  const [activeCategory, setActiveCategory] = useState<'all' | EducationItem['category']>('all')
 
-  const setCategory = (category: 'all' | EducationItem['category']) => {
-    activeCategory.value = category
-  }
+  const items = useMemo(
+    () =>
+      activeCategory === 'all'
+        ? allEducation
+        : allEducation.filter((item) => item.category === activeCategory),
+    [activeCategory]
+  )
 
   return {
     categories,
     items,
     activeCategory,
-    setCategory,
+    setCategory: setActiveCategory,
   }
 }
