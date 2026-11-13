@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
-import { describe, expect, it } from 'vitest'
+import { describe, expect, it, vi } from 'vitest'
 import AppHeader from '../AppHeader'
 
 describe('AppHeader', () => {
@@ -11,6 +11,23 @@ describe('AppHeader', () => {
     expect(screen.getByText('Leonel Vincent')).toBeInTheDocument()
     expect(screen.getByRole('navigation', { name: 'Navegación principal' })).toBeInTheDocument()
     expect(screen.getByRole('link', { name: /hablemos/i })).toHaveAttribute('href', '#contacto')
+  })
+
+  it('scrolls smoothly to sections without mutating hash routes', async () => {
+    const user = userEvent.setup()
+    const scrollIntoView = vi.fn()
+    const target = document.createElement('section')
+    target.id = 'areas'
+    target.scrollIntoView = scrollIntoView
+    document.body.appendChild(target)
+
+    render(<AppHeader />)
+    await user.click(screen.getByRole('link', { name: 'Áreas' }))
+
+    expect(scrollIntoView).toHaveBeenCalledWith({ behavior: 'smooth', block: 'start' })
+    expect(window.location.hash).toBe('')
+
+    document.body.removeChild(target)
   })
 
   it('toggles mobile navigation drawer and closes it when a link is clicked', async () => {
