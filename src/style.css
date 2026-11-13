@@ -1,139 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
-  line-height: 1.6;
-  font-weight: 400;
-  color: #0f172a;
-  background: radial-gradient(circle at 10% 20%, #e0f2fe 0, transparent 40%),
-    radial-gradient(circle at 80% 0, #e2fbe8 0, transparent 35%),
-    #f8fafc;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  min-height: 100vh;
-}
-
-#root {
-  max-width: 100%;
-  margin: 0 auto;
-}
-
-a {
-  color: inherit;
-}
-
-.page {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-
-.logo-row {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
-.logo {
-  height: 56px;
-  transition: filter 240ms ease, transform 240ms ease;
-}
-
-.logo:hover {
-  filter: drop-shadow(0 10px 24px rgba(100, 108, 255, 0.35));
-  transform: translateY(-2px);
-}
-
-.panel {
-  background: #ffffff;
-  border: 1px solid #e2e8f0;
-  border-radius: 18px;
-  padding: 32px;
-  box-shadow: 0 12px 60px rgba(15, 23, 42, 0.08);
-}
-
-.eyebrow {
-  margin: 0;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  font-size: 12px;
-  font-weight: 600;
-  color: #475569;
-}
-
-h1 {
-  margin: 8px 0 12px;
-  font-size: clamp(26px, 3vw + 12px, 34px);
-  letter-spacing: -0.02em;
-}
-
-.lead {
-  margin: 0;
-  color: #334155;
-  font-size: 17px;
-}
-
-.card {
-  margin-top: 24px;
-  padding: 20px;
-  border-radius: 14px;
-  background: #f8fafc;
-  border: 1px solid #e2e8f0;
-}
-
-.cta {
-  padding: 12px 18px;
-  border-radius: 12px;
-  border: 1px solid #475569;
-  background: #0f172a;
-  color: #f8fafc;
-  font-weight: 600;
-  cursor: pointer;
-  transition: transform 200ms ease, box-shadow 200ms ease, background 200ms ease;
-}
-
-.cta:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.18);
-  background: #111827;
-}
-
-.cta:focus-visible {
-  outline: 3px solid #a5b4fc;
-  outline-offset: 3px;
-}
-
-.muted {
-  margin: 10px 0 0;
-  color: #475569;
-  font-size: 14px;
-}
-
-@media (max-width: 640px) {
-  .panel {
-    padding: 24px;
+@layer base {
+  html {
+    scroll-behavior: smooth;
   }
 
-  .logo-row {
-    gap: 12px;
+  body {
+    min-width: 320px;
+    background: #0b0d0c;
+    color: #f2f3ee;
+    font-family: "Manrope", sans-serif;
+    -webkit-font-smoothing: antialiased;
   }
 
-  .logo {
-    height: 48px;
+  ::selection {
+    background: #c8ff3d;
+    color: #0b0d0c;
   }
 }
 
-/* simple fade for details */
+@layer components {
+  .nav-link {
+    position: relative;
+    transition: color 180ms ease;
+  }
+
+  .nav-link:hover {
+    color: white;
+  }
+
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -8px;
+    left: 0;
+    height: 1px;
+    background: #c8ff3d;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 180ms ease;
+  }
+
+  .nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+
+  .button-small {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    border-radius: 999px;
+    background: #c8ff3d;
+    padding: 0.7rem 1.1rem;
+    color: #0b0d0c;
+    font-weight: 700;
+    transition:
+      transform 180ms ease,
+      background 180ms ease;
+  }
+
+  .button-small:hover {
+    transform: translateY(-2px);
+    background: #d5ff6d;
+  }
+
+  .section-wrap {
+    width: 100%;
+    max-width: 1400px;
+    margin-inline: auto;
+    padding: 7rem 1.5rem;
+  }
+
+  .section-label {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 3.5rem;
+    color: rgb(255 255 255 / 0.4);
+    font-family: "DM Mono", monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+
+  .section-label span {
+    color: #c8ff3d;
+  }
+
+  .section-title {
+    font-size: clamp(2.6rem, 5vw, 5.5rem);
+    font-weight: 600;
+    line-height: 0.98;
+    letter-spacing: -0.06em;
+  }
+
+  .tag {
+    border: 1px solid rgb(255 255 255 / 0.12);
+    border-radius: 999px;
+    padding: 0.4rem 0.7rem;
+    color: rgb(255 255 255 / 0.5);
+    font-family: "DM Mono", monospace;
+    font-size: 0.65rem;
+  }
+
+  .project-card {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgb(255 255 255 / 0.1);
+    border-radius: 1rem;
+    background: #101310;
+    padding: 2rem;
+    transition:
+      border-color 220ms ease,
+      transform 220ms ease;
+  }
+
+  .project-card:hover {
+    border-color: rgb(200 255 61 / 0.35);
+    transform: translateY(-4px);
+  }
+}
+
+@media (min-width: 768px) {
+  .section-wrap {
+    padding: 9rem 2.5rem;
+  }
+
+  .project-card {
+    padding: 2.5rem;
+  }
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -146,21 +149,5 @@ h1 {
 }
 
 .animate-fade {
-  animation: fadeIn 180ms ease forwards;
-}
-
-@keyframes float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-6px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-.animate-floating {
-  animation: float 3s ease-in-out infinite;
+  animation: fadeIn 0.2s ease forwards;
 }
