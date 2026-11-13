@@ -14,9 +14,9 @@ Proyecto en React + TypeScript + Vite + Tailwind para mostrar presentación, exp
 ## Estructura breve
 - `src/pages/Home.tsx`: presentación, línea de tiempo y formación.
 - `src/constants/`: datos en JSON (`presentation`, `experience`, `education`).
-- `src/composables/`: hooks para consumir datos (`useContent`, `useExperience`, `useEducation`).
+- `src/hooks/`: hooks para consumir datos (`useContent`, `useExperience`, `useEducation`).
 - `src/components/layout/`: header, footer y `AppShell`.
 - `src/router/`: rutas (Home).
 
 ## Datos
-Edita los JSON en `src/constants/` para actualizar texto, experiencia o formación. Los componentes ya leen de esos archivos a través de servicios/composables.
+Edita los JSON en `src/constants/` para actualizar texto, experiencia o formación. Los componentes ya leen de esos archivos a través de servicios y hooks.

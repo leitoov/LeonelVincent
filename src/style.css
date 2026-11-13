@@ -23,7 +23,7 @@ body {
   min-height: 100vh;
 }
 
-#app {
+#root {
   max-width: 100%;
   margin: 0 auto;
 }
@@ -52,10 +52,6 @@ a {
 .logo:hover {
   filter: drop-shadow(0 10px 24px rgba(100, 108, 255, 0.35));
   transform: translateY(-2px);
-}
-
-.logo.vue:hover {
-  filter: drop-shadow(0 10px 24px rgba(66, 184, 131, 0.35));
 }
 
 .panel {
@@ -124,10 +120,6 @@ h1 {
 }
 
 @media (max-width: 640px) {
-  #app {
-   /* padding: 32px 16px 48px;*/
-  }
-
   .panel {
     padding: 24px;
   }
