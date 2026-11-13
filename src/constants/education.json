@@ -1,311 +1,138 @@
 [
   {
-    "id": "google-ai-specialization",
-    "title": "Google AI Specialization",
+    "id": "product-manager-coderhouse",
+    "title": "Product Manager",
+    "institution": "CoderHouse",
+    "year": "Nov 2026",
+    "category": "certificacion",
+    "details": "Formación integral en estrategia de producto, discovery, definición de MVP, métricas de impacto, priorización de roadmap y trabajo con equipos multidisciplinarios.",
+    "skills": ["Product Management", "Product Discovery", "Roadmap", "Métricas", "User Research"]
+  },
+  {
+    "id": "ai-agent-manager-certiprof",
+    "title": "AI Agent Manager",
+    "institution": "CertiProf",
+    "year": "Nov 2026",
+    "category": "certificacion",
+    "details": "Certificación especializada en diseño, orquestación, gobierno y gestión de agentes de Inteligencia Artificial aplicados a flujos reales de ingeniería y negocio.",
+    "skills": ["AI Agent Management", "Orquestación de Agentes", "Automatización", "IA Aplicada"]
+  },
+  {
+    "id": "ibm-genai-engineering",
+    "title": "Certificado Profesional de IBM Generative AI Engineering",
+    "institution": "IBM / Coursera",
+    "year": "Oct 2026",
+    "category": "certificacion",
+    "details": "Programa profesional de ingeniería en IA generativa: arquitectura de LLMs, RAG, fine-tuning, integración de modelos en producción y desarrollo de aplicaciones inteligentes.",
+    "skills": ["Generative AI", "LLMs", "RAG", "AI Engineering", "Arquitectura IA"]
+  },
+  {
+    "id": "up-ia-prompts",
+    "title": "Inteligencia Artificial (IA): Interacciones y prompts",
+    "institution": "Universidad de Palermo",
+    "year": "Oct 2026",
+    "category": "curso",
+    "details": "Diseño avanzado de interacciones con modelos generativos, estructuración de prompts complejos y optimización de respuestas para casos de uso profesionales.",
+    "skills": ["Prompt Engineering", "GenAI", "Diseño de Interacciones"]
+  },
+  {
+    "id": "google-ai-professional",
+    "title": "Certificado Profesional de Google AI",
+    "institution": "Google",
+    "year": "Ago 2026",
+    "category": "certificacion",
+    "details": "Certificación profesional en Inteligencia Artificial de Google orientada a productividad, análisis de datos, investigación asistida, comunicación y construcción de apps con IA.",
+    "skills": ["Inteligencia Artificial", "GenAI", "Data Analysis", "AI App Building", "Automatización"]
+  },
+  {
+    "id": "google-project-management",
+    "title": "Google Project Management Professional Certificate",
     "institution": "Google / Coursera",
-    "year": "2026",
+    "year": "Ago 2026",
     "category": "certificacion",
-    "details": "Especialización completa en Inteligencia Artificial de Google. Incluye los 7 cursos del programa: Fundamentals, Brainstorming & Planning, Research & Insights, Writing & Communicating, Content Creation, Data Analysis y App Building.",
-    "skills": ["Inteligencia Artificial", "GenAI", "Prompt Engineering", "Data Analysis", "AI App Building", "Automatización"],
-    "link": "https://www.coursera.org/specializations/google-ai"
+    "details": "Certificación profesional completa en gestión de proyectos (incluye Foundations of Project Management, planificación, gestión de riesgos, liderazgo de stakeholders y ejecución Agile/Scrum).",
+    "skills": ["Project Management", "Agile", "Scrum", "Gestión de Riesgos", "Liderazgo"]
   },
   {
-    "id": "ing-sistemas",
-    "title": "Ingeniería en Sistemas",
-    "institution": "Universidad (en curso)",
-    "year": "Actual",
-    "category": "carrera",
-    "details": "Formación de grado orientada a software, arquitectura y gestión de proyectos.",
-    "skills": ["Arquitectura de software", "Algoritmos", "Gestión de proyectos"]
-  },
-  {
-    "id": "medicina-barcelo",
-    "title": "Medicina",
-    "institution": "Fundación Barceló",
-    "year": "2023 - 2024",
-    "category": "carrera",
-    "details": "Carrera de Medicina cursada durante dos años. Primer año finalizado con promedio 9.50. Segundo año cursado hasta mitad de año.",
-    "status": "abandonado",
-    "skills": ["Anatomía", "Neurociencia básica", "Comunicación", "Estudio autónomo", "Disciplina académica"]
-  },
-  {
-    "id": "tec-programacion",
-    "title": "Técnico en Programación",
-    "institution": "Escuela Técnica N°2",
-    "year": "2017",
-    "category": "carrera",
-    "details": "Formación técnica con bases sólidas en desarrollo, lógica y fundamentos de software.",
-    "skills": ["Programación", "Bases de datos", "Patrones básicos"]
-  },
-  {
-    "id": "linkedin-gestion-equipos",
-    "title": "Cómo gestionar equipos de trabajo",
-    "institution": "LinkedIn Learning",
-    "year": "2026",
+    "id": "santander-gestion-equipos",
+    "title": "Gestión Efectiva de proyectos y equipos",
+    "institution": "Santander",
+    "year": "Dic 2025",
     "category": "curso",
-    "details": "Liderazgo y dirección de equipos en entornos corporativos.",
-    "skills": ["Dirección de equipos", "Liderazgo", "Gestión"]
-  },
-  {
-    "id": "linkedin-hablar-escuchar",
-    "title": "Cómo hablar para que te escuchen",
-    "institution": "LinkedIn Learning",
-    "year": "2026",
-    "category": "curso",
-    "details": "Habilidades de comunicación efectiva y persuasión.",
-    "skills": ["Comunicación", "Habilidades sociales"]
-  },
-  {
-    "id": "linkedin-productividad-ia",
-    "title": "Trucos de productividad con IA para reimaginar tu jornada laboral",
-    "institution": "LinkedIn Learning",
-    "year": "2026",
-    "category": "curso",
-    "details": "Uso de herramientas de IA para optimizar procesos y flujos de trabajo.",
-    "skills": ["IA para empresas", "Productividad", "Eficiencia"]
-  },
-  {
-    "id": "linkedin-prompt-engineering",
-    "title": "Prompt Engineering: Aprende a hablar con una IA generativa",
-    "institution": "LinkedIn Learning",
-    "year": "2026",
-    "category": "curso",
-    "details": "Diseño y optimización de prompts para modelos de lenguaje.",
-    "skills": ["Prompt Engineering", "Inteligencia artificial"]
-  },
-  {
-    "id": "linkedin-lenguaje-influencia",
-    "title": "El lenguaje de la influencia: Cómo persuadir y generar impacto",
-    "institution": "LinkedIn Learning",
-    "year": "2026",
-    "category": "curso",
-    "details": "Técnicas de oratoria y persuasión para generar impacto profesional.",
-    "skills": ["Oratoria", "Persuasión", "Influencia"]
-  },
-  {
-    "id": "linkedin-ia-creativos",
-    "title": "IA Generativa para Profissionais Criativos",
-    "institution": "LinkedIn Learning",
-    "year": "2026",
-    "category": "curso",
-    "details": "Exploración de herramientas de IA aplicadas a procesos creativos y ética.",
-    "skills": ["IA Generativa", "Creatividad", "Ética"]
-  },
-  {
-    "id": "linkedin-escucha-activa-secreto",
-    "title": "La escucha activa: El secreto de la comunicación efectiva",
-    "institution": "LinkedIn Learning",
-    "year": "2026",
-    "category": "curso",
-    "details": "Desarrollo de habilidades de escucha profunda para mejorar la interacción.",
-    "skills": ["Comunicación", "Empatía"]
-  },
-  {
-    "id": "linkedin-liderazgo-ie-march",
-    "title": "Liderazgo con inteligencia emocional",
-    "institution": "LinkedIn Learning",
-    "year": "2026",
-    "category": "curso",
-    "details": "Gestión de equipos basada en el autoconocimiento y la empatía.",
-    "skills": ["Inteligencia emocional", "Liderazgo"]
-  },
-  {
-    "id": "linkedin-mejora-escucha-activa",
-    "title": "Mejora tu habilidad de escucha activa",
-    "institution": "LinkedIn Learning",
-    "year": "2026",
-    "category": "curso",
-    "details": "Técnicas prácticas para potenciar la receptividad y comprensión.",
-    "skills": ["Escucha activa", "Comunicación"]
-  },
-  {
-    "id": "fullstack-utn",
-    "title": "Diplomatura Full Stack Developer",
-    "institution": "UTN.BA",
-    "year": "2020",
-    "category": "certificacion",
-    "details": "Desarrollo full stack con enfoque práctico en frontend y backend.",
-    "skills": ["JavaScript", "Frontend", "Backend"]
-  },
-  {
-    "id": "utn-angular",
-    "title": "Desarrollo con Angular",
-    "institution": "UTN.BA",
-    "year": "2020",
-    "category": "certificacion",
-    "details": "Curso oficial UTN con carga horaria de 30h. Nota: Sobresaliente.",
-    "skills": ["Angular", "Frontend", "TypeScript"]
-  },
-  {
-    "id": "utn-react",
-    "title": "Desarrollo en React JS",
-    "institution": "UTN.BA",
-    "year": "2020",
-    "category": "certificación",
-    "details": "Formación en desarrollo de interfaces con React.",
-    "skills": ["React", "Frontend", "JavaScript"]
-  },
-  {
-    "id": "google-activate-mobile",
-    "title": "Desarrollo de Apps Móviles",
-    "institution": "Google Activate",
-    "year": "2021",
-    "category": "certificación",
-    "details": "Diseño y desarrollo de apps móviles multiplataforma.",
-    "skills": ["Mobile", "Desarrollo", "Arquitectura"]
-  },
-  {
-    "id": "platzi-diseno",
-    "title": "Diseño para Programadores",
-    "institution": "Platzi",
-    "year": "2025",
-    "category": "curso",
-    "details": "Principios de diseño aplicados al desarrollo.",
-    "skills": ["UI", "Diseño", "Layout"]
-  },
-  {
-    "id": "platzi-uxui",
-    "title": "Fundamentos de Diseño de Interfaces UX/UI",
-    "institution": "Platzi",
-    "year": "2025",
-    "category": "curso",
-    "details": "Bases de diseño de interfaces y experiencia de usuario.",
-    "skills": ["UX", "UI", "Interacción"]
-  },
-  {
-    "id": "platzi-uxwriting",
-    "title": "Introducción a UX Writing",
-    "institution": "Platzi",
-    "year": "2025",
-    "category": "curso",
-    "details": "Redacción orientada a interfaces y experiencia de usuario.",
-    "skills": ["UX Writing", "Comunicación", "Contenido"]
-  },
-  {
-    "id": "platzi-neurofeedback",
-    "title": "La Neurociencia del Feedback",
-    "institution": "Platzi",
-    "year": "2025",
-    "category": "curso",
-    "details": "Fundamentos de neurociencia aplicados al feedback efectivo.",
-    "skills": ["Feedback", "Comunicación", "Neurociencia"]
-  },
-  {
-    "id": "linkedin-agile-transicion",
-    "title": "Transición de gestión de proyectos en cascada a Agile",
-    "institution": "LinkedIn Learning",
-    "year": "2025",
-    "category": "curso",
-    "details": "Adaptación de modelos tradicionales a metodologías ágiles.",
-    "skills": ["Agile", "Gestión", "Scrum"]
-  },
-  {
-    "id": "linkedin-manager",
-    "title": "Sé el manager que nadie quiere dejar",
-    "institution": "LinkedIn Learning",
-    "year": "2025",
-    "category": "curso",
-    "details": "Gestión de equipos y liderazgo centrado en personas.",
-    "skills": ["Gestión de personas", "Liderazgo", "Comunicación"]
-  },
-  {
-    "id": "linkedin-agile-fundamentos",
-    "title": "Fundamentos de la gestión de proyectos ágil",
-    "institution": "LinkedIn Learning",
-    "year": "2025",
-    "category": "curso",
-    "details": "Bases de metodologías ágiles y gestión de proyectos.",
-    "skills": ["Metodologías ágiles", "Gestión de proyectos"]
-  },
-  {
-    "id": "linkedin-inteligencia-emocional",
-    "title": "Comunicar con inteligencia emocional",
-    "institution": "LinkedIn Learning",
-    "year": "2025",
-    "category": "curso",
-    "details": "Comunicación efectiva basada en inteligencia emocional.",
-    "skills": ["Inteligencia emocional", "Comunicación interpersonal"]
-  },
-  {
-    "id": "linkedin-agile-reuniones",
-    "title": "Agile en acción: Impulsar reuniones ágiles y productivas",
-    "institution": "LinkedIn Learning",
-    "year": "2025",
-    "category": "curso",
-    "details": "Mejora de dinámicas de reuniones y productividad en equipos ágiles.",
-    "skills": ["Agile", "Dirección de reuniones", "Gestión"]
-  },
-  {
-    "id": "linkedin-agile-equipo",
-    "title": "Agile en acción: Construye tu equipo ágil",
-    "institution": "LinkedIn Learning",
-    "year": "2025",
-    "category": "curso",
-    "details": "Liderazgo ágil y formación de equipos de alto rendimiento.",
-    "skills": ["Liderazgo Agile", "Gestión de equipos"]
+    "details": "Herramientas prácticas para la coordinación de equipos, seguimiento de objetivos, comunicación efectiva y cumplimiento de entregas.",
+    "skills": ["Gestión de Equipos", "Liderazgo", "Comunicación"]
   },
   {
     "id": "santander-agile",
     "title": "Gestión de Proyectos y Fundamentos de metodología Agile",
     "institution": "Santander",
-    "year": "2025",
-    "category": "certificacion",
-    "details": "ID de credencial: OA-2025-1220002099453.",
-    "skills": ["Gestión de proyectos", "Liderazgo Agile"]
+    "year": "Dic 2025",
+    "category": "curso",
+    "details": "Fundamentos ágiles, entregas iterativas, priorización de valor y mejora continua aplicada a proyectos tecnológicos. ID: OA-2025-1220002099453.",
+    "skills": ["Metodologías Ágiles", "Gestión de Proyectos", "Mejora Continua"]
   },
   {
-    "id": "google-foundations-pm",
-    "title": "Foundations of Project Management",
+    "id": "platzi-uxui",
+    "title": "Fundamentos de Diseño de Interfaces UX/UI",
+    "institution": "Platzi",
+    "year": "Jun 2025",
+    "category": "curso",
+    "details": "Bases de diseño de interfaces, arquitectura de información, sistemas visuales y experiencia de usuario.",
+    "skills": ["UX", "UI", "Diseño de Interfaces", "Interacción"]
+  },
+  {
+    "id": "platzi-uxwriting",
+    "title": "Prácticas de UX Writing: Claridad, Precisión y Utilidad",
+    "institution": "Platzi",
+    "year": "Jun 2025",
+    "category": "curso",
+    "details": "Redacción centrada en el usuario para interfaces digitales, microcopy claro y flujos conversacionales efectivos.",
+    "skills": ["UX Writing", "Microcopy", "Producto Digital"]
+  },
+  {
+    "id": "utn-fullstack",
+    "title": "Professional Full-Stack Developer",
+    "institution": "Centro de e-Learning UTN FRBA",
+    "year": "Ene 2021",
+    "category": "certificacion",
+    "details": "Diplomatura profesional en desarrollo full stack con enfoque práctico en arquitectura frontend, backend y bases de datos.",
+    "skills": ["Full Stack", "JavaScript", "Frontend", "Backend"]
+  },
+  {
+    "id": "google-mobile-apps",
+    "title": "Desarrollo de Apps Móviles",
     "institution": "Google",
-    "year": "2025",
+    "year": "Ene 2021",
     "category": "certificacion",
-    "details": "ID de credencial: 2MVGAT3P3YPU.",
-    "skills": ["Project Management", "Agile"]
+    "details": "Diseño, arquitectura y desarrollo de aplicaciones móviles multiplataforma.",
+    "skills": ["Mobile", "Desarrollo", "Arquitectura"]
   },
   {
-    "id": "linkedin-agile-trello",
-    "title": "Gestión de proyectos ágiles con Trello",
-    "institution": "LinkedIn Learning",
-    "year": "2025",
+    "id": "utn-react",
+    "title": "Desarrollo con React JS",
+    "institution": "Centro de e-Learning UTN FRBA",
+    "year": "Nov 2020",
     "category": "curso",
-    "details": "Uso de Trello para la gestión visual de proyectos ágiles.",
-    "skills": ["Trello", "Gestión ágil"]
+    "details": "Formación especializada en construcción de interfaces modernas y componentes reutilizables con React.",
+    "skills": ["React", "Frontend", "JavaScript"]
   },
   {
-    "id": "linkedin-agile-herramientas",
-    "title": "Gestión de proyectos ágiles: Comparación de herramientas ágiles",
-    "institution": "LinkedIn Learning",
-    "year": "2025",
+    "id": "utn-angular",
+    "title": "Programación con Angular",
+    "institution": "Centro de e-Learning UTN FRBA",
+    "year": "Nov 2020",
     "category": "curso",
-    "details": "Análisis y comparativa de software para gestión de proyectos.",
-    "skills": ["Gestión ágil", "Herramientas"]
+    "details": "Curso oficial UTN con carga horaria de 30h. Nota: Sobresaliente.",
+    "skills": ["Angular", "TypeScript", "Frontend"]
   },
   {
-    "id": "linkedin-agile-profesional",
-    "title": "Conviértete en profesional en gestión de proyectos ágiles",
-    "institution": "LinkedIn Learning",
-    "year": "2025",
-    "category": "curso",
-    "details": "Desarrollo de historias de usuario y metodologías ágiles.",
-    "skills": ["User Stories", "Agile"]
-  },
-  {
-    "id": "linkedin-agile-project",
-    "title": "Project: Gestión de proyectos ágiles",
-    "institution": "LinkedIn Learning",
-    "year": "2025",
-    "category": "curso",
-    "details": "Aplicación práctica de metodologías ágiles en proyectos reales.",
-    "skills": ["Gestión ágil", "Project Management"]
-  },
-  {
-    "id": "linkedin-agile-retrospectivas",
-    "title": "Agile en acción: Mejorar con retrospectivas ágiles",
-    "institution": "LinkedIn Learning",
-    "year": "2025",
-    "category": "curso",
-    "details": "Optimización de equipos mediante procesos de retrospectiva.",
-    "skills": ["Retrospectiva", "Mejora continua"]
+    "id": "tec-programacion",
+    "title": "Técnico en Programación",
+    "institution": "Escuela Técnica N°2",
+    "year": "2010 - 2017",
+    "category": "carrera",
+    "details": "Formación técnica secundaria con bases sólidas en programación, lógica, bases de datos y fundamentos de ingeniería de software.",
+    "skills": ["Programación", "Bases de datos", "Lógica y Algoritmos"]
   },
   {
     "id": "olimpiadas-inet",

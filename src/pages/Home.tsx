@@ -6,6 +6,7 @@ import Icon, { type IconName } from '../components/common/Icon'
 import AreaTabs from '../components/areas/AreaTabs'
 import AreaSection from '../components/areas/AreaSection'
 import EducationSection from '../components/education/EducationSection'
+import { scrollToSection } from '../utils/scroll'
 
 const AREA_CARD_ICONS: Record<AreaId, IconName> = {
   producto: 'spark',
@@ -53,6 +54,7 @@ export default function Home() {
             </p>
             <a
               href="#areas"
+              onClick={scrollToSection('areas')}
               className="mt-7 inline-flex items-center gap-3 text-sm font-semibold text-[#c8ff3d] transition-transform hover:translate-x-0.5"
             >
               Explorar por área <Icon name="arrow" className="size-4" />
@@ -180,18 +182,26 @@ export default function Home() {
             <h2 className="max-w-4xl text-[clamp(2.8rem,7vw,6.8rem)] font-semibold leading-[0.88] tracking-[-0.07em]">
               ¿Construimos algo que importe?
             </h2>
-            <a
-              className="group flex shrink-0 items-center justify-between gap-10 rounded-full bg-[#0b0d0c] px-7 py-5 font-semibold text-white transition-transform hover:scale-[1.02]"
-              href="https://www.linkedin.com"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Conectemos{' '}
-              <Icon
-                name="arrow"
-                className="size-5 transition-transform group-hover:translate-x-1"
-              />
-            </a>
+            <div className="flex flex-wrap gap-3">
+              <a
+                className="group flex shrink-0 items-center justify-between gap-6 rounded-full bg-[#0b0d0c] px-7 py-5 font-semibold text-white transition-transform hover:scale-[1.02]"
+                href="mailto:leonelexequielvincent@gmail.com"
+              >
+                Escríbeme{' '}
+                <Icon
+                  name="arrow"
+                  className="size-5 transition-transform group-hover:translate-x-1"
+                />
+              </a>
+              <a
+                className="flex shrink-0 items-center gap-2 rounded-full border border-black/25 bg-black/5 px-6 py-5 font-semibold text-[#0b0d0c] transition hover:bg-black/10"
+                href="https://www.linkedin.com/in/leonel-vincent-cabrera/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Icon name="linkedin" className="size-5" /> LinkedIn
+              </a>
+            </div>
           </div>
         </div>
       </section>

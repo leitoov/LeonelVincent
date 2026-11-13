@@ -3,7 +3,7 @@ export interface EducationItem {
   title: string
   institution: string
   year: string
-  category: 'carrera' | 'certificacion' | 'curso'
+  category: 'carrera' | 'certificacion' | 'curso' | 'reconocimiento'
   details?: string
   skills?: string[]
   link?: string

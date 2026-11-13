@@ -45,7 +45,7 @@ describe('Home integration', () => {
 
     // Click Famiq SRL sub-tab inside Gestión
     await user.click(within(panel).getByRole('button', { name: /Famiq SRL/i }))
-    expect(panel).toHaveTextContent('Responsable de Soporte y Trazabilidad')
+    expect(panel).toHaveTextContent('Responsable del Área de Soporte y Trazabilidad')
   })
 
   it('navigates to the corresponding area tab when clicking a capability card in section 01', async () => {
@@ -63,7 +63,7 @@ describe('Home integration', () => {
       'true'
     )
     expect(screen.getByRole('tabpanel')).toHaveTextContent(
-      'Arquitectura, Backend, Frontend e IA'
+      'Arquitectura, Microservicios e IA Aplicada'
     )
     expect(window.HTMLElement.prototype.scrollIntoView).toHaveBeenCalled()
   })
@@ -72,13 +72,17 @@ describe('Home integration', () => {
     const user = userEvent.setup()
     render(<Home />)
 
-    expect(screen.getByText('Google AI Specialization')).toBeInTheDocument()
-    expect(screen.getByText('Ingeniería en Sistemas')).toBeInTheDocument()
+    expect(
+      screen.getByText('Certificado Profesional de IBM Generative AI Engineering')
+    ).toBeInTheDocument()
+    expect(screen.getByText('Técnico en Programación')).toBeInTheDocument()
 
     await user.click(screen.getByRole('button', { name: 'carrera' }))
 
-    expect(screen.getByText('Ingeniería en Sistemas')).toBeInTheDocument()
-    expect(screen.queryByText('Google AI Specialization')).not.toBeInTheDocument()
+    expect(screen.getByText('Técnico en Programación')).toBeInTheDocument()
+    expect(
+      screen.queryByText('Certificado Profesional de IBM Generative AI Engineering')
+    ).not.toBeInTheDocument()
   })
 })
 
