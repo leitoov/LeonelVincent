@@ -2,7 +2,12 @@
 export default {
   content: ['./index.html', './src/**/*.{ts,tsx}'],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['Manrope', 'sans-serif'],
+        mono: ['"DM Mono"', 'monospace'],
+      },
+    },
   },
   plugins: [],
 }
