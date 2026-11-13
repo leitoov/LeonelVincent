@@ -1,7 +1,7 @@
 import { useMemo, useRef, useState } from 'react'
-import { useContent } from '../composables/useContent'
-import { useExperience } from '../composables/useExperience'
-import { useEducation } from '../composables/useEducation'
+import { useContent } from '../hooks/useContent'
+import { useExperience } from '../hooks/useExperience'
+import { useEducation } from '../hooks/useEducation'
 
 export default function Home() {
   const { presentation } = useContent()
