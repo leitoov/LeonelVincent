@@ -38,11 +38,11 @@ export default function EducationSection() {
         ))}
       </div>
 
-      <div className="grid gap-5 md:grid-cols-2">
+      <div className="grid gap-4 md:grid-cols-2 md:gap-5">
         {education.map((edu) => (
           <article
             key={edu.id}
-            className="flex h-full flex-col justify-between gap-4 rounded-2xl border border-white/10 bg-[#101310] p-6 transition-colors hover:border-white/20 hover:bg-[#151a14]"
+            className="flex h-full min-w-0 flex-col justify-between gap-3 rounded-2xl border border-white/10 bg-[#101310] p-4 transition-colors hover:border-white/20 hover:bg-[#151a14] md:gap-4 md:p-6"
           >
             <div className="space-y-3">
               <div className="flex items-start justify-between gap-3">

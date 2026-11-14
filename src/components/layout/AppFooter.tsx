@@ -3,7 +3,7 @@ import { scrollToSection } from '../../utils/scroll'
 
 export default function AppFooter() {
   return (
-    <footer className="bg-[#0b0d0c] px-6 py-10 text-[#f2f3ee] lg:px-10">
+    <footer className="bg-[#0b0d0c] px-5 pb-24 pt-10 text-[#f2f3ee] md:px-6 md:pb-10 lg:px-10">
       <div className="mx-auto flex max-w-[1400px] flex-col gap-6 border-t border-white/10 pt-8 text-sm text-white/40 md:flex-row md:items-center md:justify-between">
         <p>© {new Date().getFullYear()} Leonel Vincent. Tech Lead · Product Manager · Backend & AI Architecture.</p>
         <div className="flex flex-wrap items-center gap-6">

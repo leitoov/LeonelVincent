@@ -29,33 +29,33 @@ export default function Home() {
       {/* Hero */}
       <section
         id="inicio"
-        className="relative flex min-h-[90vh] items-end border-b border-white/10 px-6 pb-16 pt-36 lg:px-10 lg:pb-24"
+        className="relative flex items-end border-b border-white/10 px-5 pb-12 pt-28 md:min-h-[90vh] md:px-6 md:pb-24 md:pt-36 lg:px-10"
       >
-        <div className="pointer-events-none absolute right-[-6rem] top-24 size-[34rem] rounded-full bg-[#c8ff3d]/[0.08] blur-[130px]" />
-        <div className="mx-auto grid w-full max-w-[1400px] items-end gap-12 lg:grid-cols-[1fr_340px]">
-          <div>
-            <div className="mb-8 flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.2em] text-[#c8ff3d]">
-              <span className="size-2 rounded-full bg-[#c8ff3d] shadow-[0_0_16px_#c8ff3d]" />
-              {presentation.title} · Disponible para nuevos retos
+        <div className="pointer-events-none absolute right-[-6rem] top-24 size-[24rem] rounded-full bg-[#c8ff3d]/[0.08] blur-[120px] md:size-[34rem] md:blur-[130px]" />
+        <div className="mx-auto grid w-full max-w-[1400px] items-end gap-8 md:gap-12 lg:grid-cols-[1fr_340px]">
+          <div className="min-w-0">
+            <div className="mb-5 flex items-center gap-2.5 text-[11px] font-semibold uppercase tracking-[0.16em] text-[#c8ff3d] md:mb-8 md:gap-3 md:text-xs md:tracking-[0.2em]">
+              <span className="size-2 shrink-0 rounded-full bg-[#c8ff3d] shadow-[0_0_16px_#c8ff3d]" />
+              <span className="truncate">{presentation.title} · Disponible para nuevos retos</span>
             </div>
-            <p className="mb-4 text-lg text-white/50 md:text-xl">
+            <p className="mb-3 text-sm text-white/55 md:mb-4 md:text-xl md:text-white/50">
               {presentation.tagline}
             </p>
-            <h1 className="max-w-[1100px] text-[clamp(3.2rem,8.5vw,8.5rem)] font-semibold leading-[0.88] tracking-[-0.075em]">
+            <h1 className="max-w-[1100px] text-[clamp(2.75rem,11vw,8.5rem)] font-semibold leading-[0.9] tracking-[-0.06em] md:leading-[0.88] md:tracking-[-0.075em]">
               Construyo sistemas.
               <br />
               <span className="text-white/[0.28]">Impulso equipos.</span>
             </h1>
           </div>
 
-          <div className="border-l border-white/15 pl-6 lg:mb-2">
-            <p className="text-base leading-relaxed text-white/65 md:text-lg">
+          <div className="min-w-0 border-t border-white/15 pt-5 lg:mb-2 lg:border-l lg:border-t-0 lg:pl-6 lg:pt-0">
+            <p className="text-sm leading-relaxed text-white/65 md:text-lg">
               {presentation.intro[0]}
             </p>
             <a
               href="#areas"
               onClick={scrollToSection('areas')}
-              className="mt-7 inline-flex items-center gap-3 text-sm font-semibold text-[#c8ff3d] transition-transform hover:translate-x-0.5"
+              className="mt-5 inline-flex items-center gap-3 text-sm font-semibold text-[#c8ff3d] transition-transform hover:translate-x-0.5 md:mt-7"
             >
               Explorar por área <Icon name="arrow" className="size-4" />
             </a>
@@ -69,33 +69,35 @@ export default function Home() {
           <span>01</span> Lo que aporto
         </div>
 
-        <div className="grid gap-10 lg:grid-cols-[0.7fr_1.3fr]">
+        <div className="grid gap-8 md:gap-10 lg:grid-cols-[0.7fr_1.3fr]">
           <h2 className="section-title">
             Tecnología al servicio
             <br />
             de las personas.
           </h2>
-          <div>
-            <div className="space-y-4 text-xl leading-relaxed tracking-[-0.02em] text-white/75 md:text-2xl">
+          <div className="min-w-0">
+            <div className="space-y-3 text-base leading-relaxed tracking-[-0.015em] text-white/75 md:space-y-4 md:text-2xl md:tracking-[-0.02em]">
               {presentation.intro.slice(1).map((paragraph) => (
                 <p key={paragraph.substring(0, 24)}>{paragraph}</p>
               ))}
             </div>
 
-            <div className="mt-14 grid border-y border-white/10 md:grid-cols-3">
+            <div className="mt-10 grid grid-cols-3 border-y border-white/10 md:mt-14">
               {[
                 ['8+', 'años creando software'],
                 ['3 áreas', 'Producto, Gestión y Dev'],
-                ['IA-First', 'integrada en el día a día'],
+                ['IA-First', 'integrada al día a día'],
               ].map(([value, label]) => (
                 <div
                   key={label}
-                  className="py-7 md:border-l md:border-white/10 md:px-7 md:first:border-l-0 md:first:pl-0"
+                  className="border-l border-white/10 px-3 py-5 first:border-l-0 first:pl-0 md:px-7 md:py-7"
                 >
-                  <strong className="block text-4xl font-semibold tracking-[-0.05em] text-[#c8ff3d]">
+                  <strong className="block text-xl font-semibold tracking-[-0.04em] text-[#c8ff3d] sm:text-3xl md:text-4xl md:tracking-[-0.05em]">
                     {value}
                   </strong>
-                  <span className="mt-2 block text-sm text-white/45">{label}</span>
+                  <span className="mt-1.5 block text-[11px] leading-snug text-white/45 md:mt-2 md:text-sm">
+                    {label}
+                  </span>
                 </div>
               ))}
             </div>
@@ -103,29 +105,29 @@ export default function Home() {
         </div>
 
         {/* Resumen rápido de las 3 áreas que navega directo al tab correspondiente */}
-        <div className="mt-24 grid gap-px overflow-hidden rounded-2xl border border-white/10 bg-white/10 lg:grid-cols-3">
+        <div className="mt-12 grid gap-3 md:mt-24 md:gap-px md:overflow-hidden md:rounded-2xl md:border md:border-white/10 md:bg-white/10 lg:grid-cols-3">
           {areas.map((area, index) => (
             <button
               key={area.id}
               type="button"
               onClick={() => handleSelectAreaAndScroll(area.id)}
-              className="group bg-[#101310] p-7 text-left transition-colors hover:bg-[#151a14] md:p-9"
+              className="group min-w-0 rounded-2xl border border-white/10 bg-[#101310] p-5 text-left transition-colors hover:bg-[#151a14] md:rounded-none md:border-0 md:p-9"
             >
-              <div className="mb-16 flex items-start justify-between">
-                <span className="grid size-12 place-items-center rounded-full border border-white/10 text-[#c8ff3d] transition-colors group-hover:border-[#c8ff3d]/40">
+              <div className="mb-6 flex items-center justify-between md:mb-16 md:items-start">
+                <span className="grid size-10 place-items-center rounded-full border border-white/10 text-[#c8ff3d] transition-colors group-hover:border-[#c8ff3d]/40 md:size-12">
                   <Icon name={AREA_CARD_ICONS[area.id]} />
                 </span>
                 <span className="font-mono text-xs text-white/30">
                   0{index + 1}
                 </span>
               </div>
-              <h3 className="mb-3 text-2xl font-semibold tracking-[-0.035em] text-[#f2f3ee]">
+              <h3 className="mb-2 text-xl font-semibold tracking-[-0.03em] text-[#f2f3ee] md:mb-3 md:text-2xl md:tracking-[-0.035em]">
                 {area.label}
               </h3>
-              <p className="mb-8 min-h-20 text-sm leading-relaxed text-white/55">
+              <p className="mb-5 text-sm leading-relaxed text-white/55 md:mb-8 md:min-h-20">
                 {area.description}
               </p>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-1.5 md:gap-2">
                 {area.tools.slice(0, 4).map((tool) => (
                   <span className="tag" key={tool}>
                     {tool}

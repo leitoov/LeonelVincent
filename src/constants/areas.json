@@ -4,61 +4,70 @@
     "label": "Producto",
     "eyebrow": "Product Management & UX",
     "title": "Visión de Producto, Negocio y Experiencia",
-    "description": "Conecto reglas comerciales, tecnología y experiencia de usuario para construir productos digitales escalables. Trabajo junto a analistas funcionales, equipos de UX/UI y stakeholders para convertir necesidades complejas en soluciones medibles.",
+    "description": "Diseño soluciones escalables para productos digitales combinando arquitectura robusta con un fuerte enfoque en las reglas comerciales, sistemas de diseño en Figma y mejora continua del negocio.",
     "pillars": [
-      "Definición funcional alineada a reglas comerciales y mejora continua del negocio",
-      "Colaboración cercana con UX/UI y sistemas de diseño en Figma",
-      "Lanzamiento de productos críticos (B2B turismo, e-commerce, fintech cripto)",
-      "Priorización de roadmap basada en impacto y valor al usuario"
+      "Enfoque en reglas comerciales, tarificación y mejora continua del negocio",
+      "Desarrollo de plataformas web basadas en sistemas de diseño en Figma",
+      "Módulos de autoservicio, reportería inteligente y búsqueda semántica orientada al usuario",
+      "Flujos críticos de compra/venta, onboarding con biometría y paneles de métricas"
     ],
     "tools": [
       "Product Management",
-      "Product Discovery",
       "Figma",
-      "UX/UI",
-      "UX Writing",
-      "Análisis funcional",
+      "Reglas comerciales",
+      "React / Next.js (SSR)",
+      "Vue.js",
+      "Búsqueda Semántica",
       "Jira"
     ],
     "experiences": [
       {
         "experienceId": "stefanini",
-        "areaRole": "Producto & Reglas Comerciales B2B (CVC-Ola)",
-        "focus": "Definición de soluciones sobre la plataforma B2B de turismo junto a analistas funcionales y UX, modelando reglas de tarificación, flujos de emisión de vuelos y reportería inteligente.",
+        "focus": "Desarrollo de servicios para reservas complejas, reglas de tarificación y módulos de autoservicio y reportería gráfica inteligente en intranet con pipelines RAG y LLMs.",
         "highlights": [
-          "Colaboración estratégica con analistas funcionales y UX para definir soluciones de alto impacto",
-          "Modelado de reglas comerciales de tarificación y ciclo de vida de reservas (PNRs)",
-          "Módulos de autoservicio y reportería gráfica inteligente con IA para usuarios internos"
+          "Reglas de tarificación y servicios para reservas complejas en plataforma de turismo",
+          "Módulos de autoservicio y reportería gráfica inteligente en intranet con RAG y LLMs",
+          "Priorización del sprint backlog en Jira alineada a reglas comerciales"
         ],
         "showEmbed": true
       },
       {
         "experienceId": "famiq",
-        "areaRole": "Evolución de E-commerce & Búsqueda Semántica (La PIN)",
-        "focus": "Modernización de la experiencia de compra en el e-commerce de aceros inoxidables, incorporando búsqueda semántica con IA y migrando vistas legacy hacia Vue.js.",
+        "focus": "Desacople de servicios de catálogo y checkout e implementación de un motor de búsqueda semántica con embeddings optimizado con Redis.",
         "highlights": [
-          "Implementación de búsqueda semántica con embeddings para mejorar el descubrimiento del catálogo técnico",
-          "Desacople de catálogo y checkout para evolucionar el producto con menor fricción",
-          "Modernización progresiva del frontend hacia Vue.js"
+          "Desacople de los servicios de catálogo y checkout",
+          "Motor de búsqueda semántica con embeddings para mejorar la búsqueda del catálogo técnico",
+          "Sincronización bidireccional de stock, precios y pedidos con SAP (XML)"
         ]
       },
       {
         "experienceId": "satoshitango",
-        "areaRole": "Producto Fintech, Web SSR & Tarjeta Cripto",
-        "focus": "Participación en el lanzamiento de la primera tarjeta cripto del país y evolución de la app móvil y web (React/Next.js SSR) basada en sistemas de diseño en Figma.",
+        "focus": "Desarrollo de la plataforma web en React/Next.js (SSR) basada en sistemas de diseño en Figma y construcción de app móvil (Ionic/Angular) con biometría y custodia cripto.",
         "highlights": [
-          "Participación en el lanzamiento de la primera tarjeta cripto del país",
-          "Plataforma web en React/Next.js (SSR) construida sobre sistemas de diseño en Figma",
-          "Flujos de onboarding seguro con biometría y custodia cripto en app móvil"
+          "Plataforma web en React/Next.js (SSR) basada en sistemas de diseño en Figma",
+          "App móvil (Ionic/Angular) con biometría y custodia cripto",
+          "Flujos críticos de compra/venta con pruebas automatizadas"
+        ]
+      },
+      {
+        "experienceId": "Solventa",
+        "focus": "Construcción de paneles en tiempo real (JavaScript ES6+) para métricas de cobranzas y análisis de riesgo crediticio.",
+        "highlights": [
+          "Paneles en tiempo real (JavaScript ES6+) para métricas de cobranzas y análisis de riesgo crediticio"
+        ]
+      },
+      {
+        "experienceId": "sysworld",
+        "focus": "Desarrollo end-to-end de portales corporativos y aplicaciones web dinámicas con PHP, Angular, JavaScript y MySQL.",
+        "highlights": [
+          "Desarrollo end-to-end de portales corporativos y aplicaciones web dinámicas"
         ]
       },
       {
         "experienceId": "impulso360",
-        "areaRole": "Soluciones Digitales para Pymes",
-        "focus": "Relevamiento directo con clientes finales para diseñar y lanzar portales corporativos y tiendas online a medida.",
+        "focus": "Desarrollo end-to-end de portales corporativos y aplicaciones web dinámicas con PHP, Angular, JavaScript y MySQL.",
         "highlights": [
-          "Comunicación directa con cliente final para relevar necesidades",
-          "Diseño y puesta en producción de tiendas online y portales corporativos"
+          "Desarrollo end-to-end de portales corporativos y aplicaciones web dinámicas"
         ]
       }
     ]
@@ -66,53 +75,48 @@
   {
     "id": "gestion",
     "label": "Gestión",
-    "eyebrow": "Tech Lead & Agile Delivery",
-    "title": "Liderazgo de Equipos, Procesos y Entrega",
-    "description": "Lidero equipos de ingeniería combinando capacity planning, estimación técnica, Code Reviews y gestión ágil del backlog. Aseguro estándares de calidad, coordinación interáreas y estabilidad operativa en producción.",
+    "eyebrow": "Tech Lead & AI Agent Manager",
+    "title": "Liderazgo Técnico, Agilidad y Soporte",
+    "description": "Lidero equipos técnicos gestionando capacity planning, estimación técnica, Code Reviews, priorización de backlog en Jira, despliegues CI/CD y soporte en producción.",
     "pillars": [
-      "Liderazgo técnico, mentoría de equipo y capacity planning",
-      "Estimación técnica, roadmapping y priorización de sprint backlog en Jira",
-      "Code Reviews, pruebas automatizadas y mejora continua",
-      "Dirección del área de soporte en producción y coordinación interáreas"
+      "Gestión de equipos de desarrollo, mentoría y capacity planning",
+      "Estimación técnica, roadmapping y priorización del sprint backlog en Jira",
+      "Code Review, Quality Assurance y metodologías ágiles (Scrum / Kanban)",
+      "Tech Lead de soporte: gestión de CI/CD y resolución de incidencias en producción"
     ],
     "tools": [
-      "Project Management",
+      "Google Project Management",
       "AI Agent Management",
       "Scrum / Kanban",
       "Capacity Planning",
       "Jira",
-      "Redmine",
-      "Code Reviews"
+      "Code Review & QA",
+      "CI/CD"
     ],
     "experiences": [
       {
         "experienceId": "stefanini",
-        "areaRole": "Tech Lead & AI Agent Manager (4 desarrolladores)",
-        "focus": "Gestión de un equipo de 4 desarrolladores en plataforma B2B de turismo, liderando capacity planning, estimación técnica, Code Reviews y priorización del sprint backlog en Jira.",
+        "focus": "Gestión de un equipo de 4 desarrolladores, liderando capacity planning, estimación técnica, Code Review y priorización del sprint backlog en Jira.",
         "highlights": [
-          "Liderazgo y mentoría diaria de un equipo de 4 desarrolladores",
-          "Capacity planning, estimación técnica y priorización del sprint backlog en Jira",
-          "Garantía de calidad mediante Code Reviews y procesos de mejora continua",
-          "Integración de flujos asistidos con IA para acelerar análisis y entrega"
+          "Gestión de un equipo de 4 desarrolladores",
+          "Capacity planning, estimación técnica y Code Review",
+          "Priorización del sprint backlog en Jira"
         ]
       },
       {
         "experienceId": "famiq",
-        "areaRole": "Responsable del Área de Soporte y Trazabilidad",
-        "focus": "A cargo del área de soporte en producción —en paralelo al desarrollo de nuevos features—, gestionando CI/CD, coordinando reuniones interáreas y manteniendo el backlog de incidencias en cero.",
+        "focus": "Gestión de CI/CD y resolución de incidencias en producción asistida con Codex, en paralelo a la migración a microservicios e integraciones SAP.",
         "highlights": [
-          "Responsable integral del área de soporte en producción, manteniendo el backlog en cero",
-          "Gestión de deploys (CI/CD) y resolución de incidencias asistida con Codex",
-          "Coordinación interáreas y categorización de errores en Redmine para mejorar trazabilidad"
+          "Gestión de CI/CD y despliegues de la plataforma",
+          "Resolución de incidencias en producción asistida con Codex"
         ]
       },
       {
-        "experienceId": "Solventa",
-        "areaRole": "Visibilidad Operativa & Métricas de Negocio",
-        "focus": "Construcción de dashboards operativos en tiempo real para la gestión de cobranzas, llamadas y análisis de riesgo crediticio en múltiples países.",
+        "experienceId": "satoshitango",
+        "focus": "Implementación de pruebas automatizadas sobre flujos críticos de compra/venta y optimización de latencia para consumo de cotizaciones en tiempo real.",
         "highlights": [
-          "Paneles de control en tiempo real para métricas de cobranzas, KPIs y riesgo crediticio",
-          "Alta autonomía en decisiones técnicas para equipos de Argentina, Perú, Colombia y EE.UU."
+          "Implementación de pruebas automatizadas sobre flujos críticos de compra/venta",
+          "Optimización de latencia para consumo de cotizaciones en tiempo real"
         ]
       }
     ]
@@ -120,20 +124,20 @@
   {
     "id": "desarrollo",
     "label": "Desarrollo",
-    "eyebrow": "Backend, Microservices & AI Architecture",
-    "title": "Arquitectura, Microservicios e IA Aplicada",
-    "description": "Más de 8 años diseñando sistemas distribuidos, APIs de alta concurrencia e integraciones enterprise. Especializado en migración a microservicios (Laravel, Node.js, Spring Boot), caché Redis y pipelines de IA (RAG, LLMs, Embeddings).",
+    "eyebrow": "Backend, Microservices & AI Engineering",
+    "title": "Arquitectura, Microservicios e IA Generativa",
+    "description": "Más de 8 años diseñando soluciones escalables, microservicios (Laravel, Node.js, Spring Boot), APIs de alta concurrencia, integraciones ERP (SAP) y pipelines de IA (RAG, LLMs, Embeddings).",
     "pillars": [
-      "Desacople de monolitos a microservicios en PHP (Laravel), Node.js y Java (Spring Boot)",
-      "Integraciones de alta concurrencia (GDS/APIs globales, SAP vía XML/RFC, pasarelas fintech)",
-      "IA aplicada en producción: pipelines RAG, SDKs de LLMs, búsqueda semántica y embeddings",
-      "Optimización de latencia y rendimiento con Redis, MySQL, PostgreSQL y MongoDB"
+      "Descomposición de monolitos a microservicios en PHP (Laravel), Node.js y Java (Spring Boot)",
+      "Integraciones de alta concurrencia (GDS/Netviax, Juniper, Hotelbeds, Expedia) y SAP (XML/TMA)",
+      "IA Generativa en producción: pipelines RAG, LLMs vía SDK y búsqueda semántica con embeddings",
+      "Caché Redis, optimización MySQL/MongoDB, Docker y CI/CD"
     ],
     "tools": [
-      "PHP 8.4 / Laravel",
-      "Java Spring Boot",
-      "Node.js / Express",
-      "React / Next.js / Vue.js",
+      "PHP 8.4 (Laravel / Symfony)",
+      "Java (Spring Boot)",
+      "Node.js (Express)",
+      "React / Next.js / Vue.js / Angular",
       "RAG / LLMs / Embeddings",
       "Redis / MySQL / MongoDB",
       "Docker / REST / SOAP / SAP"
@@ -141,62 +145,53 @@
     "experiences": [
       {
         "experienceId": "stefanini",
-        "areaRole": "Tech Lead & Software Engineer (APIs, SAP & RAG)",
         "focus": "Integración del motor de vuelos (GDS/Netviax, PNRs) y conectores de alta concurrencia (Juniper, Hotelbeds, Expedia), microservicios con SAP/TMA (PHP 8.4, Node.js, Spring Boot, Redis) y pipelines RAG/LLMs.",
         "highlights": [
-          "Integración de motor de vuelos (GDS/Netviax) y conectores REST y SOAP/XML (Juniper, Hotelbeds, Expedia)",
-          "Microservicios de reservas y tarificación con sincronización en tiempo real SAP/TMA y caché Redis",
-          "Pipelines RAG y LLMs vía SDK para autoservicio y reportería inteligente",
-          "Stack: PHP 8.4 (Laravel), Node.js, Java (Spring Boot), Vue.js, Docker, MySQL, MongoDB"
+          "Motor de vuelos (GDS/Netviax, emisión y PNRs) y conectores REST y SOAP/XML (Juniper, Hotelbeds, Expedia)",
+          "Microservicios de reservas, tarificación y sincronización en tiempo real con SAP/TMA (PHP 8.4, Node.js, Spring Boot, Redis)",
+          "Pipelines RAG y LLMs vía SDK para autoservicio y reportería gráfica inteligente"
         ]
       },
       {
         "experienceId": "famiq",
-        "areaRole": "Senior Software Engineer (Microservicios Spring Boot & IA)",
-        "focus": "Descomposición de monolito Symfony hacia microservicios en Laravel, Node.js y Java Spring Boot, motor de búsqueda semántica con embeddings + Redis, integraciones SAP (XML) y soporte en producción.",
+        "focus": "Descomposición de plataforma monolítica Symfony hacia microservicios en Laravel, Node.js y Spring Boot, búsqueda semántica con embeddings + Redis e integración SAP (XML).",
         "highlights": [
-          "Descomposición de plataforma monolítica Symfony hacia microservicios en Laravel, Node.js y Java Spring Boot",
+          "Descomposición de monolito Symfony hacia microservicios en Laravel, Node.js y Spring Boot",
           "Motor de búsqueda semántica con embeddings optimizado con caché en Redis",
-          "Sincronización bidireccional de stock, precios y pedidos con SAP (XML) y gestión de CI/CD",
-          "Desarrollo de nuevos features y soporte en producción sobre Vue.js, Docker, MySQL y MongoDB"
+          "Sincronización bidireccional de stock, precios y pedidos con SAP (XML) y gestión de CI/CD"
         ]
       },
       {
         "experienceId": "satoshitango",
-        "areaRole": "Full Stack & Mobile Developer",
-        "focus": "App móvil (Ionic/Angular) con biometría y custodia cripto, web en React/Next.js (SSR), microservicios fintech y pruebas automatizadas en flujos críticos.",
+        "focus": "App móvil (Ionic/Angular) con biometría y custodia cripto, web React/Next.js (SSR), microservicios y APIs para pasarelas de pago y proveedores cripto.",
         "highlights": [
-          "App móvil en Ionic/Angular con validación biométrica y custodia cripto",
-          "Plataforma web en React/Next.js (SSR) con TypeScript",
-          "Microservicios y APIs en PHP (Laravel) para pasarelas de pago y proveedores cripto",
-          "Optimización de latencia en cotizaciones en tiempo real y pruebas automatizadas"
+          "App móvil (Ionic/Angular) con biometría y custodia cripto",
+          "Plataforma web en React/Next.js (SSR) y microservicios en PHP (Laravel) para pasarelas de pago",
+          "Optimización de latencia en cotizaciones y pruebas automatizadas en flujos críticos"
         ]
       },
       {
         "experienceId": "Solventa",
-        "areaRole": "Full Stack Developer (Scoring & Tiempo Real)",
-        "focus": "APIs para el flujo integral de créditos financieros, paneles operativos en tiempo real (JavaScript ES6+) y optimización de consultas MySQL con PHP y Java (Spring Boot).",
+        "focus": "APIs para el flujo integral de créditos financieros, paneles en tiempo real (JavaScript ES6+) y optimización de consultas MySQL con PHP y Java (Spring Boot).",
         "highlights": [
-          "APIs para scoring y flujo integral de créditos financieros en PHP y Java (Spring Boot)",
-          "Paneles en tiempo real (JavaScript ES6+) y optimización de consultas MySQL para cobranzas y riesgo"
+          "APIs para el flujo integral de créditos financieros en PHP y Java (Spring Boot)",
+          "Paneles en tiempo real (JavaScript ES6+) y optimización de consultas en MySQL"
         ]
       },
       {
         "experienceId": "sysworld",
-        "areaRole": "Full Stack & Mobile Developer",
-        "focus": "Desarrollo end-to-end de portales corporativos y apps híbridas para Toyota y Banco Coinag con PHP, Angular, Ionic, JavaScript y MySQL.",
+        "focus": "Desarrollo end-to-end de portales corporativos y aplicaciones web dinámicas con PHP, Angular, JavaScript, MySQL y REST APIs.",
         "highlights": [
-          "Aplicaciones web y mobile con Angular e Ionic para Toyota y Banco Coinag",
-          "Sistema automatizado de envío de correos con templates y esquemas en MySQL"
+          "Portales corporativos y aplicaciones web dinámicas con PHP, Angular y JavaScript",
+          "Diseño de esquemas relacionales en MySQL y consumo de REST APIs"
         ]
       },
       {
         "experienceId": "impulso360",
-        "areaRole": "Full Stack Developer",
-        "focus": "Desarrollo end-to-end de portales corporativos, tiendas online y apps híbridas con PHP, WordPress, Angular, Ionic y MySQL.",
+        "focus": "Desarrollo end-to-end de portales corporativos y aplicaciones web dinámicas con PHP, Angular, JavaScript, MySQL y REST APIs.",
         "highlights": [
-          "Templates dinámicos en WordPress y funcionalidades a medida en PHP y JavaScript",
-          "Apps híbridas con Ionic/Angular y diseño de esquemas relacionales en MySQL"
+          "Portales corporativos y aplicaciones web dinámicas con PHP, Angular y JavaScript",
+          "Diseño de esquemas relacionales en MySQL y consumo de REST APIs"
         ]
       }
     ]
