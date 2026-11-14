@@ -29,7 +29,7 @@ describe('Home integration', () => {
     )
   })
 
-  it('switches area tabs and displays area-specific experience and company sub-tabs', async () => {
+  it('switches area tabs and displays all area-specific experiences at once', async () => {
     const user = userEvent.setup()
     render(<Home />)
 
@@ -40,12 +40,12 @@ describe('Home integration', () => {
 
     expect(gestionTab).toHaveAttribute('aria-selected', 'true')
     const panel = screen.getByRole('tabpanel')
-    expect(panel).toHaveTextContent('Liderazgo de Equipos, Procesos y Entrega')
+    expect(panel).toHaveTextContent('Liderazgo Técnico, Agilidad y Soporte')
     expect(panel).toHaveTextContent('Experiencia en Gestión')
-
-    // Click Famiq SRL sub-tab inside Gestión
-    await user.click(within(panel).getByRole('button', { name: /Famiq SRL/i }))
-    expect(panel).toHaveTextContent('Responsable del Área de Soporte y Trazabilidad')
+    expect(panel).toHaveTextContent('Stefanini (CVC)')
+    expect(panel).toHaveTextContent('Famiq')
+    expect(panel).toHaveTextContent('Senior Software Engineer | Tech Lead soporte')
+    expect(panel).toHaveTextContent('SatoshiTango')
   })
 
   it('navigates to the corresponding area tab when clicking a capability card in section 01', async () => {
@@ -63,7 +63,7 @@ describe('Home integration', () => {
       'true'
     )
     expect(screen.getByRole('tabpanel')).toHaveTextContent(
-      'Arquitectura, Microservicios e IA Aplicada'
+      'Arquitectura, Microservicios e IA Generativa'
     )
     expect(window.HTMLElement.prototype.scrollIntoView).toHaveBeenCalled()
   })

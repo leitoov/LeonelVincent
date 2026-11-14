@@ -4,20 +4,19 @@
     "role": "Tech Lead / Software Engineer | AI Agent Manager",
     "company": "Stefanini (CVC)",
     "period": "Ago. 2025 – Presente",
-    "location": "CABA · Híbrido",
-    "summary": "Liderazgo técnico de equipo, distribución global de vuelos (GDS/APIs), microservicios transaccionales con SAP/TMA y pipelines RAG/LLMs en producción.",
-    "description": "Gestiono un equipo de 4 desarrolladores liderando capacity planning, estimación técnica, Code Reviews y priorización del sprint backlog en Jira. En arquitectura y desarrollo, trabajo sobre la integración del motor de vuelos (GDS/Netviax, emisión y ciclo de vida de PNRs) y conectores de alta concurrencia (Juniper, Hotelbeds, Expedia) bajo REST y SOAP/XML, además de microservicios de reservas, tarificación y sincronización en tiempo real con SAP/TMA (PHP 8.4, Node.js, Spring Boot, Redis) y pipelines RAG/LLMs vía SDK para autoservicio y reportería inteligente.",
+    "location": "CABA",
+    "summary": "Liderazgo técnico de un equipo de 4 desarrolladores, distribución global de vuelos (GDS/APIs), microservicios con SAP/TMA y pipelines RAG/LLMs.",
+    "description": "Gestión de un equipo de 4 desarrolladores, liderando capacity planning, estimación técnica, Code Review y priorización del sprint backlog en Jira. Integración del motor de vuelos (GDS/Netviax, emisión y ciclo de vida de PNRs) y conectores de alta concurrencia (Juniper, Hotelbeds, Expedia) bajo REST y SOAP/XML. Desarrollo de microservicios para reservas complejas, reglas de tarificación y sincronización en tiempo real con SAP/TMA en PHP 8.4, Node.js y Spring Boot con caché Redis, e implementación de pipelines RAG y LLMs vía SDK para módulos de autoservicio y reportería gráfica inteligente en intranet.",
     "highlights": [
-      "Gestión de un equipo de 4 desarrolladores: capacity planning, estimación técnica, Code Review y priorización en Jira",
-      "Integración del motor de vuelos (GDS/Netviax, emisión y PNRs) y conectores de alta concurrencia (Juniper, Hotelbeds, Expedia) vía REST y SOAP/XML",
-      "Microservicios de reservas complejas, tarificación y sincronización en tiempo real con SAP/TMA en PHP 8.4, Node.js y Spring Boot con caché Redis",
-      "Implementación de pipelines RAG y LLMs vía SDK para módulos de autoservicio y reportería gráfica inteligente"
+      "Liderazgo técnico & Agilidad: gestión de un equipo de 4 desarrolladores, capacity planning, estimación técnica, Code Review y priorización del sprint backlog en Jira",
+      "Distribución de vuelos & APIs globales: integración del motor de vuelos (GDS/Netviax, emisión y ciclo de vida de PNRs) y conectores de alta concurrencia (Juniper, Hotelbeds, Expedia) bajo REST y SOAP/XML",
+      "Microservicios, ERP & Transacciones: servicios para reservas complejas, reglas de tarificación y sincronización en tiempo real con SAP/TMA en PHP 8.4, Node.js y Spring Boot con caché Redis",
+      "IA Generativa & Analítica: pipelines RAG y LLMs vía SDK para módulos de autoservicio y reportería gráfica inteligente en intranet, acelerando análisis y desarrollo"
     ],
     "technologies": [
-      "PHP 8.4",
-      "Laravel 12",
+      "PHP 8.4 (Laravel)",
       "Node.js",
-      "Java Spring Boot",
+      "Java (Spring Boot)",
       "Vue.js",
       "LLMs (SDKs)",
       "RAG",
@@ -26,24 +25,17 @@
       "MongoDB",
       "Docker",
       "REST / SOAP",
-      "SAP / TMA",
-      "Jira"
+      "SAP"
     ],
     "skills": [
-      "Liderazgo técnico",
-      "AI Agent Management",
       "Capacity Planning",
-      "Microservicios",
-      "APIs de alta concurrencia",
+      "Estimación técnica",
       "Code Review",
-      "Análisis funcional",
-      "Comunicación con UX y analistas"
+      "Sprint Backlog (Jira)",
+      "AI Agent Management",
+      "Microservicios"
     ],
     "links": [
-      {
-        "label": "Web Ola",
-        "url": "https://www.ola.com.ar/"
-      },
       {
         "label": "Figma",
         "url": "https://www.figma.com/design/21dKStdgbNU2IoWzmmg7LA/Proyectos-en-Ola--cvc-?node-id=0-1&t=G0zBG0qzZWCnJDeE-1"
@@ -54,45 +46,36 @@
   {
     "id": "famiq",
     "role": "Senior Software Engineer | Tech Lead soporte",
-    "company": "Famiq SRL",
+    "company": "Famiq",
     "period": "Mar. 2023 – Ago. 2025",
-    "location": "CABA · Híbrido",
-    "summary": "Descomposición de monolito a microservicios (Laravel, Node.js, Spring Boot), búsqueda semántica con IA, integración SAP y responsabilidad integral del área de soporte.",
-    "description": "Lideré la descomposición de la plataforma monolítica Symfony hacia microservicios en Laravel, Node.js y Java Spring Boot, desacoplando los servicios de catálogo y checkout de La PIN. Implementé un motor de búsqueda semántica con embeddings optimizado con caché en Redis, además de sincronización bidireccional de stock, precios y pedidos con SAP (XML). En paralelo a nuevos features, estuve a cargo del área de soporte en producción, gestión de CI/CD, coordinación interáreas y categorización de incidencias en Redmine asistida con Codex.",
+    "location": "CABA",
+    "summary": "Migración de monolito Symfony a microservicios (Laravel, Node.js, Spring Boot), búsqueda semántica con embeddings + Redis, integración SAP (XML) y Tech Lead de soporte.",
+    "description": "Descomposición de plataforma monolítica Symfony hacia microservicios en Laravel, Node.js y Spring Boot, desacoplando los servicios de catálogo y checkout. Implementación de motor de búsqueda semántica con embeddings para el catálogo técnico, optimizado con caché en Redis para reducir latencia y consultas a BD. Sincronización bidireccional de stock, precios y pedidos con SAP (XML), gestión de CI/CD y resolución de incidencias en producción asistida con Codex.",
     "highlights": [
-      "Descomposición de monolito Symfony hacia microservicios en Laravel, Node.js y Java Spring Boot (catálogo y checkout)",
-      "Motor de búsqueda semántica con embeddings para catálogo técnico optimizado con caché en Redis",
-      "Sincronización bidireccional de stock, precios y pedidos con SAP (XML) y gestión de CI/CD",
-      "Responsable integral del área de soporte en producción, manteniendo el backlog en cero con trazabilidad en Redmine"
+      "Migración a Microservicios: descomposición de plataforma monolítica Symfony hacia microservicios en Laravel, Node.js y Spring Boot (catálogo y checkout)",
+      "Búsqueda Semántica con IA & Caché: motor de búsqueda semántica con embeddings para catálogo técnico, optimizado con caché en Redis",
+      "Integración SAP, Deploys e Incidencias: sincronización bidireccional de stock, precios y pedidos con SAP (XML), gestión de CI/CD y resolución de incidencias en producción asistida con Codex"
     ],
     "technologies": [
       "Laravel",
       "Symfony",
-      "Java Spring Boot",
+      "Java (Spring Boot)",
       "Node.js",
       "Vue.js",
-      "Embeddings / IA",
+      "Búsqueda Semántica / Embeddings",
       "Redis",
       "SAP (XML)",
       "MySQL",
       "MongoDB",
       "Docker",
-      "Redmine",
       "Git"
     ],
     "skills": [
-      "Arquitectura de microservicios",
       "Tech Lead soporte",
-      "Búsqueda semántica",
-      "Integraciones SAP",
+      "Migración a Microservicios",
       "CI/CD",
-      "Coordinación interáreas"
-    ],
-    "links": [
-      {
-        "label": "Web Famiq",
-        "url": "https://www.famiq.com.ar/"
-      }
+      "Integración SAP",
+      "Resolución de incidencias"
     ]
   },
   {
@@ -100,14 +83,13 @@
     "role": "Full Stack Developer",
     "company": "SatoshiTango",
     "period": "Mar. 2021 – Mar. 2023",
-    "location": "CABA · Híbrido",
-    "summary": "App mobile cripto con biometría, plataforma web en React/Next.js (SSR), microservicios fintech y lanzamiento de la primera tarjeta cripto del país.",
-    "description": "Construí la app móvil (Ionic/Angular) con validación biométrica y custodia cripto, y desarrollé la plataforma web en React/Next.js (SSR) basada en sistemas de diseño en Figma. En backend desarrollé microservicios y APIs en PHP (Laravel) para pasarelas de pago y proveedores cripto, optimizando latencia para cotizaciones en tiempo real e implementando pruebas automatizadas sobre flujos críticos de compra/venta.",
+    "location": "CABA",
+    "summary": "App móvil (Ionic/Angular) con biometría y custodia cripto, web en React/Next.js (SSR) desde Figma, microservicios fintech y optimización de latencia.",
+    "description": "Construcción de la app móvil (Ionic/Angular) con biometría y custodia cripto, y desarrollo de la plataforma web en React/Next.js (SSR) basada en sistemas de diseño en Figma. Desarrollo de microservicios y APIs para pasarelas de pago y proveedores de cripto, optimización de latencia para consumo de cotizaciones en tiempo real e implementación de pruebas automatizadas sobre flujos críticos de compra/venta.",
     "highlights": [
-      "Participación en el lanzamiento de la primera tarjeta cripto del país",
-      "App móvil (Ionic/Angular) con biometría (rostro y lector de tarjetas) y custodia cripto",
-      "Plataforma web en React/Next.js (SSR) alineada a sistemas de diseño en Figma",
-      "Microservicios para pasarelas de pago, optimización de latencia y pruebas automatizadas en flujos críticos"
+      "Desarrollo Frontend & Mobile: app móvil (Ionic/Angular) con biometría y custodia cripto, y plataforma web en React/Next.js (SSR) basada en sistemas de diseño en Figma",
+      "Backend Transaccional & Fintech: microservicios y APIs para pasarelas de pago y proveedores de cripto",
+      "Rendimiento & Calidad: optimización de latencia para cotizaciones en tiempo real e implementación de pruebas automatizadas sobre flujos críticos de compra/venta"
     ],
     "technologies": [
       "PHP (Laravel)",
@@ -122,32 +104,24 @@
       "Figma"
     ],
     "skills": [
-      "Desarrollo mobile",
-      "Fintech & pagos",
-      "Integración biométrica",
+      "Desarrollo Frontend & Mobile",
+      "Backend Transaccional",
+      "Sistemas de diseño (Figma)",
       "Optimización de latencia",
       "Pruebas automatizadas"
-    ],
-    "links": [
-      {
-        "label": "Web SatoshiTango",
-        "url": "https://www.satoshitango.com/"
-      }
     ]
   },
   {
     "id": "Solventa",
     "role": "Full Stack Developer",
-    "company": "Solventa Fintech",
+    "company": "Solventa",
     "period": "Abr. 2020 – May. 2021",
-    "location": "CABA · Presencial",
-    "summary": "Backend transaccional y scoring crediticio, junto a paneles operativos en tiempo real para múltiples países.",
-    "description": "Desarrollé APIs para el flujo integral de créditos financieros y construí paneles en tiempo real (JavaScript ES6+) utilizados en Argentina, Perú, Colombia y EE.UU. Trabajé con PHP, Java (Spring Boot) y optimización de consultas en MySQL para métricas de cobranzas, llamadas, KPIs y análisis de riesgo crediticio.",
+    "location": "CABA",
+    "summary": "Backend transaccional y scoring para créditos financieros, junto a paneles operativos en tiempo real y optimización MySQL.",
+    "description": "Desarrollo de APIs para el flujo integral de créditos financieros. Construcción de paneles en tiempo real (JavaScript ES6+) y optimización de consultas en MySQL para métricas de cobranzas y análisis de riesgo crediticio.",
     "highlights": [
-      "Backend transaccional y scoring: APIs para el flujo integral de créditos financieros",
-      "Paneles operativos en tiempo real (JavaScript ES6+) para múltiples países",
-      "Optimización de consultas en MySQL para métricas de cobranzas y riesgo crediticio",
-      "Trabajo con PHP y Java (Spring Boot) con alta autonomía técnica"
+      "Backend Transaccional & Scoring: desarrollo de APIs para el flujo integral de créditos financieros",
+      "Dashboards & Reportes Operativos: paneles en tiempo real (JavaScript ES6+) y optimización de consultas en MySQL para métricas de cobranzas y análisis de riesgo crediticio"
     ],
     "technologies": [
       "PHP",
@@ -158,10 +132,10 @@
       "Git"
     ],
     "skills": [
-      "Backend transaccional",
-      "Sistemas en tiempo real",
-      "Optimización SQL",
-      "Autonomía técnica"
+      "Backend Transaccional",
+      "Dashboards en tiempo real",
+      "Optimización MySQL",
+      "Riesgo crediticio"
     ]
   },
   {
@@ -169,28 +143,25 @@
     "role": "Full Stack Developer",
     "company": "SysWorld",
     "period": "2019 – Ago. 2020",
-    "location": "CABA · Presencial",
-    "summary": "Desarrollo end-to-end de soluciones web y apps híbridas para Toyota y Banco Coinag.",
-    "description": "Participé en proyectos simultáneos para Toyota y Banco Coinag, desarrollando portales corporativos y aplicaciones híbridas con PHP, Angular, Ionic y JavaScript. Implementé un sistema de envío automatizado de correos con templates, diseñé esquemas relacionales en MySQL y trabajé sobre estructuras heredadas.",
+    "location": "CABA",
+    "summary": "Desarrollo end-to-end de portales corporativos y aplicaciones web dinámicas con PHP, Angular, JavaScript y MySQL.",
+    "description": "Desarrollo end-to-end de portales corporativos y aplicaciones web dinámicas utilizando PHP, Angular y JavaScript, diseñando esquemas de bases de datos relacionales en MySQL y consumo de REST APIs.",
     "highlights": [
-      "Soluciones web y mobile con Angular e Ionic para Toyota y Banco Coinag",
-      "Sistema automatizado de correos con templates",
-      "Diseño de esquemas relacionales en MySQL y consumo de REST APIs"
+      "Desarrollo Web & Apps Híbridas: desarrollo end-to-end de portales corporativos y aplicaciones web dinámicas con PHP, Angular y JavaScript",
+      "Bases de datos & APIs: diseño de esquemas relacionales en MySQL y consumo de REST APIs"
     ],
     "technologies": [
       "PHP",
       "Angular",
-      "Ionic",
       "JavaScript",
       "MySQL",
       "REST APIs",
       "Git"
     ],
     "skills": [
-      "Versatilidad tecnológica",
-      "Desarrollo híbrido",
-      "Manejo de legacy",
-      "Comunicación interequipos"
+      "Desarrollo end-to-end",
+      "Bases de datos relacionales",
+      "Consumo de REST APIs"
     ]
   },
   {
@@ -198,28 +169,25 @@
     "role": "Full Stack Developer",
     "company": "Impulso 360",
     "period": "Feb. 2018 – 2019",
-    "location": "CABA · Presencial",
-    "summary": "Desarrollo end-to-end de portales corporativos, tiendas online y apps híbridas para pymes.",
-    "description": "Desarrollé sitios web, e-commerce y sistemas personalizados end-to-end utilizando PHP, WordPress, Angular y JavaScript, diseñando bases de datos relacionales en MySQL y participando en aplicaciones híbridas con Ionic desde la maquetación hasta la puesta en producción.",
+    "location": "CABA",
+    "summary": "Desarrollo end-to-end de portales corporativos y aplicaciones web dinámicas con PHP, Angular, JavaScript y MySQL.",
+    "description": "Desarrollo end-to-end de portales corporativos y aplicaciones web dinámicas utilizando PHP, Angular y JavaScript, diseñando esquemas de bases de datos relacionales en MySQL y consumo de REST APIs.",
     "highlights": [
-      "Desarrollo end-to-end de portales corporativos y tiendas online",
-      "Templates dinámicos en WordPress y funciones a medida en PHP y JavaScript",
-      "Participación en apps híbridas con Ionic y Angular"
+      "Desarrollo Web & Apps Híbridas: desarrollo end-to-end de portales corporativos y aplicaciones web dinámicas con PHP, Angular y JavaScript",
+      "Bases de datos & APIs: diseño de esquemas relacionales en MySQL y consumo de REST APIs"
     ],
     "technologies": [
       "PHP",
-      "WordPress",
       "Angular",
-      "Ionic",
       "JavaScript",
       "MySQL",
+      "REST APIs",
       "Git"
     ],
     "skills": [
-      "Desarrollo para pymes",
-      "Soluciones personalizadas",
-      "Maquetación y producción",
-      "Comunicación con cliente final"
+      "Desarrollo end-to-end",
+      "Bases de datos relacionales",
+      "Consumo de REST APIs"
     ]
   }
 ]
