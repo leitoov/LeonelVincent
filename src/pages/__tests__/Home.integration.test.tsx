@@ -29,7 +29,7 @@ describe('Home integration', () => {
     )
   })
 
-  it('switches area tabs and displays all area-specific experiences at once', async () => {
+  it('switches area tabs and keeps the full unified experience list visible', async () => {
     const user = userEvent.setup()
     render(<Home />)
 
@@ -41,11 +41,15 @@ describe('Home integration', () => {
     expect(gestionTab).toHaveAttribute('aria-selected', 'true')
     const panel = screen.getByRole('tabpanel')
     expect(panel).toHaveTextContent('Liderazgo Técnico, Agilidad y Soporte')
-    expect(panel).toHaveTextContent('Experiencia en Gestión')
-    expect(panel).toHaveTextContent('Stefanini (CVC)')
-    expect(panel).toHaveTextContent('Famiq')
-    expect(panel).toHaveTextContent('Senior Software Engineer | Tech Lead soporte')
-    expect(panel).toHaveTextContent('SatoshiTango')
+
+    // All 6 experiences remain visible below regardless of the selected area tab
+    const areasSection = document.getElementById('areas')!
+    expect(areasSection).toHaveTextContent('Stefanini (CVC)')
+    expect(areasSection).toHaveTextContent('Famiq')
+    expect(areasSection).toHaveTextContent('SatoshiTango')
+    expect(areasSection).toHaveTextContent('Solventa')
+    expect(areasSection).toHaveTextContent('SysWorld')
+    expect(areasSection).toHaveTextContent('Impulso 360')
   })
 
   it('navigates to the corresponding area tab when clicking a capability card in section 01', async () => {

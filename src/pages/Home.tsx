@@ -5,6 +5,7 @@ import type { AreaId } from '../types/area'
 import Icon, { type IconName } from '../components/common/Icon'
 import AreaTabs from '../components/areas/AreaTabs'
 import AreaSection from '../components/areas/AreaSection'
+import ExperienceTimeline from '../components/experience/ExperienceTimeline'
 import EducationSection from '../components/education/EducationSection'
 import { scrollToSection } from '../utils/scroll'
 
@@ -168,6 +169,8 @@ export default function Home() {
           />
 
           {activeArea && <AreaSection area={activeArea} />}
+
+          <ExperienceTimeline />
         </div>
       </section>
 
